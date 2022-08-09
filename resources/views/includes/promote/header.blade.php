@@ -29,8 +29,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.php" class="nav-item nav-link active">หน้าแรก</a>
-                    <a href="about.php" class="nav-item nav-link">เกี่ยวกับ</a>
+                    <a href="{{url ('/')}}" class="nav-item nav-link active">หน้าแรก</a>
+                    <a href="{{url ('/about')}}" class="nav-item nav-link">เกี่ยวกับ</a>
                 
                     <div class="nav-item dropdown">
                         <a href="product.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">สินค้า</a>
