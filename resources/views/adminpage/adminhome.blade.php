@@ -55,14 +55,21 @@
                                     </a>
                                 </li>
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="{{url ('/admin/typeproduct')}}">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>T</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
-                                    <a href="index.html">
+                                    <a href="{{url ('/admin/user')}}">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>U</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="{{url ('/admin/info')}}">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>I</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Info</span>
                                         <span class="pcoded-mcaret"></span>
@@ -315,7 +322,7 @@
                                                                     <tr>
                                                                         <td>
                                                                         <div class="task-contain">
-                                                                            <h6 class="bg-c-blue d-inline-block text-center">S</h6>
+                                                                            <h6 class="bg-c-blue d-inline-block text-center"></h6>
                                                                             <p class="d-inline-block m-l-20">Sum</p>
                                                                         </div>
                                                                         </td>

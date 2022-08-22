@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\user;
-class ProductController extends Controller
+
+class UserController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,9 +23,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $read = user::all();
-
         // return view('home');
-        return view('adminpage.adminproduct.product' , compact('read'));
+        return view('adminpage.adminuser.user');
     }
 }

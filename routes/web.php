@@ -40,6 +40,7 @@ Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->
 Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'index'])->name('adminpage.adminproduct.product');
 Route::get('/admin/typeproduct',[App\Http\Controllers\TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');
 Route::get('/admin/info',[App\Http\Controllers\InfoController::class,'index'])->name('adminpage.admininfo.info');
+Route::get('/admin/user',[App\Http\Controllers\UserController::class,'index'])->name('adminpage.adminuser.user');
 
 // Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');
 
