@@ -43,28 +43,8 @@
                             <div class="media">
                                 <img class="d-flex align-self-center img-radius" src="{{asset('template/admin/assets/images/avatar-4.jpg')}}" alt="Generic placeholder image">
                                 <div class="media-body">
-                                    <h5 class="notification-user">John Doe</h5>
-                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                    <span class="notification-time">30 minutes ago</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="media">
-                                <img class="d-flex align-self-center img-radius" src="{{asset('template/admin/assets/images/avatar-3.jpg')}}" alt="Generic placeholder image">
-                                <div class="media-body">
-                                    <h5 class="notification-user">Joseph William</h5>
-                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                    <span class="notification-time">30 minutes ago</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="media">
-                                <img class="d-flex align-self-center img-radius" src="{{asset('template/admin/assets/images/avatar-4.jpg')}}" alt="Generic placeholder image">
-                                <div class="media-body">
-                                    <h5 class="notification-user">Sara Soudein</h5>
-                                    <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                    <h5 class="notification-user">Ku Noy Klayyam</h5>
+                                    <p class="notification-msg">กรุณารีสต็อค</p>
                                     <span class="notification-time">30 minutes ago</span>
                                 </div>
                             </div>
@@ -99,9 +79,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="auth-normal-sign-in.html">
-                                <i class="ti-layout-sidebar-left"></i> Logout
-                            </a>
+                             <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                         document.getElementById('logout-form').submit();"><i class="ti-layout-sidebar-left"></i>{{ __('Logout') }}</a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                            @csrf
+                        </form>
                         </li>
                     </ul>
                 </li>
