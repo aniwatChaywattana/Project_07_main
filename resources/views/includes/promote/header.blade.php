@@ -51,7 +51,7 @@
                             <a href="404.php" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">ติดต่อ</a>
+                    <a href="{{url ('/contact')}}" class="nav-item nav-link">ติดต่อ</a>
                 </div>
                 @if (Route::has('login'))
                     @auth
