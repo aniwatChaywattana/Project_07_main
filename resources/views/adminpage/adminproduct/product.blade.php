@@ -131,10 +131,10 @@
                                                                             <p class="d-inline-block m-r-20">392</p>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Modfily</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Delete</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -151,10 +151,10 @@
                                                                             <p class="d-inline-block m-r-20">68</p>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Modfily</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Delete</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -171,10 +171,10 @@
                                                                             <p class="d-inline-block m-r-20">157</p>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Modfily</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Delete</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -191,10 +191,10 @@
                                                                             <p class="d-inline-block m-r-20">234</p>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Modfily</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Delete</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -211,10 +211,10 @@
                                                                             <p class="d-inline-block m-r-20">53</p>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Modfily</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
                                                                         </td>
                                                                         <td>
-                                                                            <a href="" class="d-inline-block m-r-20">Delete</a>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>

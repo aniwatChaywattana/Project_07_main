@@ -85,33 +85,18 @@
 
                                     <div class="page-body">
                                             <!-- Data widget start -->
-                                            <div class="col-md-12 col-xl-12">
+                                            <div class="col-md-12  col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <!-- <div class="card-header-left ">
-                    
-                                                        </div> -->
-                                                        <div class="card-header-right">
-                                                            <ul class="list-unstyled card-option">
-                                                                <li><i class="icofont icofont-simple-left "></i></li>
-                                                                <li><i class="icofont icofont-maximize full-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-minus minimize-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-refresh reload-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-error close-card"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block p-b-10">
+                                                    <div class="card-block p-b-12">
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
                                                                 <thead>
-                                                                    <tr>
+                                                                    <tr>                                                                       
                                                                         <th>Project & Task</th>
                                                                         <th>Time Spents</th>
+                                                                        <th>Modify</th>
+                                                                        <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
@@ -129,6 +114,12 @@
                                                                                 </div>
                                                                             </div>
                                                                         </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                        </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
@@ -143,6 +134,12 @@
                                                                                 <div class="progress-bar bg-c-pink" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:60%">
                                                                                 </div>
                                                                             </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -159,6 +156,12 @@
                                                                                 </div>
                                                                             </div>
                                                                         </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                        </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
@@ -174,6 +177,12 @@
                                                                                 </div>
                                                                             </div>
                                                                         </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                        </td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>
@@ -188,6 +197,12 @@
                                                                                 <div class="progress-bar bg-c-blue" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:50%">
                                                                                 </div>
                                                                             </div>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                        </td>
+                                                                        <td>
+                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>
