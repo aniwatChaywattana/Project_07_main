@@ -53,6 +53,19 @@
                     </div>
                     <a href="contact.php" class="nav-item nav-link">ติดต่อ</a>
                 </div>
+                @if (Route::has('login'))
+                    @auth
+                        <li><a href="{{ url('/admin/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">admin</a></li>
+                    @else
+                        <li><a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a></li>
+
+                        @if (Route::has('register'))
+                            <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a></li>
+                        @endif
+                    @endauth
+                </div>
+                
+                @endif
                 <div class="d-none d-lg-flex ms-2">
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="about.php">
                         <small class="fa fa-search text-body"></small>
