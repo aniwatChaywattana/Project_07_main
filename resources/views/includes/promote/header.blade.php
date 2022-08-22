@@ -8,8 +8,8 @@
 <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
-                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+                <!-- <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small> -->
             </div>
             <div class="col-lg-6 px-5 text-end">
                 <small>Follow us:</small>
@@ -70,7 +70,7 @@
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="about.php">
                         <small class="fa fa-search text-body"></small>
                     </a>
-                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="contact.php">
+                    <a class="btn-sm-square bg-white rounded-circle ms-3" href="{{url ('/login')}}">
                         <small class="fa fa-user text-body"></small>
                     </a>
                     <a class="btn-sm-square bg-white rounded-circle ms-3" href="product.php">
