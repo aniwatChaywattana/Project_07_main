@@ -24,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','promotepage.home')->name('home');
 Route::view('/about', 'promotepage.about')->name('about');
 Route::view('/contact', 'promotepage.contact')->name('contact');
+Route::view('/product', 'promotepage.product')->name('product');
 
 //end promote
 

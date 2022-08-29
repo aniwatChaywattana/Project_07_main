@@ -35,7 +35,7 @@
                     <div class="nav-item dropdown">
                         <a href="product.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">สินค้า</a>
                         <div class="dropdown-menu m-0">
-                            <a href="product.php" class="dropdown-item">สินค้าทั้งหมด</a>
+                            <a href="{{url ('/product')}}" class="dropdown-item">สินค้าทั้งหมด</a>
                             <a href="product02.php" class="dropdown-item">สินค้าฤดู</a>
                             <a href="product03.php" class="dropdown-item">สินค้าฤดู</a>
                             <a href="product04.php" class="dropdown-item">สินค้าฤดู</a>
