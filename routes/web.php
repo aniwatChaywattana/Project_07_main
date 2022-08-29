@@ -25,6 +25,12 @@ Route::view('/','promotepage.home')->name('home');
 Route::view('/about', 'promotepage.about')->name('about');
 Route::view('/contact', 'promotepage.contact')->name('contact');
 Route::view('/product', 'promotepage.product')->name('product');
+Route::view('/product02', 'promotepage.product02')->name('product02');
+Route::view('/product03', 'promotepage.product03')->name('product03');
+Route::view('/product04', 'promotepage.product04')->name('product04');
+Route::view('/blog', 'promotepage.blog')->name('blog');
+Route::view('/feature', 'promotepage.feature')->name('feature');
+
 
 //end promote
 

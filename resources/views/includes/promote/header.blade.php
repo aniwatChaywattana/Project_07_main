@@ -36,17 +36,17 @@
                         <a href="product.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">สินค้า</a>
                         <div class="dropdown-menu m-0">
                             <a href="{{url ('/product')}}" class="dropdown-item">สินค้าทั้งหมด</a>
-                            <a href="product02.php" class="dropdown-item">สินค้าฤดู</a>
-                            <a href="product03.php" class="dropdown-item">สินค้าฤดู</a>
-                            <a href="product04.php" class="dropdown-item">สินค้าฤดู</a>
+                            <a href="{{url ('/product02')}} " class="dropdown-item">สินค้าฤดู</a>
+                            <a href="{{url ('/product03')}} " class="dropdown-item">สินค้าฤดู</a>
+                            <a href="{{url ('/product04')}} " class="dropdown-item">สินค้าฤดู</a>
                         </div>
                     </div>
 
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">อื่นๆ</a>
                         <div class="dropdown-menu m-0">
-                            <a href="blog.php" class="dropdown-item">บทความน่าสนใจอื่นๆ</a>
-                            <a href="feature.php" class="dropdown-item">เกี่ยวกับสินค้าของเรา</a>
+                            <a href="{{url ('/blog')}} " class="dropdown-item">บทความน่าสนใจอื่นๆ</a>
+                            <a href="{{url ('/feature')}} " class="dropdown-item">เกี่ยวกับสินค้าของเรา</a>
                             <a href="testimonial.php" class="dropdown-item">ความคิดเห็นจากผู้ใช้บริการ</a>
                             <a href="404.php" class="dropdown-item">404 Page</a>
                         </div>
