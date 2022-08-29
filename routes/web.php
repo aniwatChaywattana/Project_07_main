@@ -30,6 +30,7 @@ Route::view('/product03', 'promotepage.product03')->name('product03');
 Route::view('/product04', 'promotepage.product04')->name('product04');
 Route::view('/blog', 'promotepage.blog')->name('blog');
 Route::view('/feature', 'promotepage.feature')->name('feature');
+Route::view('/testimonial', 'promotepage.testimonial')->name('testimonial');
 
 
 //end promote
