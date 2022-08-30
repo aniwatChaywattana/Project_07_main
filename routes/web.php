@@ -38,6 +38,8 @@ Auth::routes();
 
 Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');
 Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'index'])->name('adminpage.adminproduct.product');
+Route::get('/admin/product/add',[App\Http\Controllers\AddController::class,'index'])->name('adminpage.adminproduct.add');
+Route::get('/admin/product/edit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.adminproduct.edit');
 Route::get('/admin/typeproduct',[App\Http\Controllers\TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');
 Route::get('/admin/info',[App\Http\Controllers\InfoController::class,'index'])->name('adminpage.admininfo.info');
 Route::get('/admin/user',[App\Http\Controllers\UserController::class,'index'])->name('adminpage.adminuser.user');

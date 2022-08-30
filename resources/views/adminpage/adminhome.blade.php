@@ -1,7 +1,39 @@
 @extends('layouts.admin')
 @section('content')
 
-                  
+<style>
+.buttonadd {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    border-radius: 15px;
+}
+.buttonmodfily {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: gold;
+    border-radius: 15px;
+}
+.buttondelete {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    border-radius: 15px;
+}
+</style>
+
 <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
@@ -49,28 +81,28 @@
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/product')}}">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>P</b></span>
+                                        <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/typeproduct')}}">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>T</b></span>
+                                        <span class="pcoded-micon"><i class="ti-package"></i><b>T</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/user')}}">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>U</b></span>
+                                        <span class="pcoded-micon"><i class="ti-user"></i><b>U</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/info')}}">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>I</b></span>
+                                        <span class="pcoded-micon"><i class="ti-info"></i><b>I</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Info</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
@@ -189,26 +221,12 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <!-- <div class="card-header-left ">
-                    
-                                                        </div> -->
-                                                        <div class="card-header-right">
-                                                            <ul class="list-unstyled card-option">
-                                                                <li><i class="icofont icofont-simple-left "></i></li>
-                                                                <li><i class="icofont icofont-maximize full-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-minus minimize-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-refresh reload-card"></i>
-                                                                </li>
-                                                                <li><i class="icofont icofont-error close-card"></i>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                        <button href="" class="buttonadd">Add</button>    
                                                     </div>
+                                                    
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
-                                                            <table class="table table-hover">
+                                                            <table class="table table-striped">
                                                                 <thead>
                                                                     <tr>
                                                                         <th>Product</th>
@@ -218,6 +236,7 @@
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
+                                                                
                                                                 <tbody>
                                                                     <tr>
                                                                         <td>
@@ -233,10 +252,10 @@
                                                                             <p class="d-inline-block m-r-20">392</p>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                            <button href="" class="buttondelete">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -253,10 +272,10 @@
                                                                             <p class="d-inline-block m-r-20">68</p>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                            <button href="" class="buttondelete">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -273,10 +292,10 @@
                                                                             <p class="d-inline-block m-r-20">157</p>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                            <button href="" class="buttondelete">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -293,10 +312,10 @@
                                                                             <p class="d-inline-block m-r-20">234</p>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                            <button href="" class="buttondelete">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
@@ -313,10 +332,10 @@
                                                                             <p class="d-inline-block m-r-20">53</p>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Modfily</button>
+                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
                                                                         </td>
                                                                         <td>
-                                                                            <button href="" class="d-inline-block m-r-20">Delete</button>
+                                                                            <button href="" class="buttondelete">Delete</button>
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
