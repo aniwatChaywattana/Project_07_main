@@ -52,8 +52,8 @@ Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'inde
 Route::get('/admin/product/add',[App\Http\Controllers\ProductController::class,'formadd'])->name('adminpage.adminproduct.formadd');
 
 Route::post('/admin/product/add',[App\Http\Controllers\ProductController::class,'add'])->name('adminpage.adminproduct.add');
-
 // U product 
+
 Route::get('/admin/product/edit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.adminproduct.edit');
 
 Route::get('/admin/typeproduct',[App\Http\Controllers\TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');

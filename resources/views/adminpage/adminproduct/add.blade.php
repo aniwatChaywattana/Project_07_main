@@ -180,9 +180,6 @@
                                                                                     <label for="examplename">name</label>
                                                                                     <input type="text" name="name" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="text" class="form-control">
-                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="exampledetail">detail</label>

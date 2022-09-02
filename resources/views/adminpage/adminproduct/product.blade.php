@@ -126,6 +126,7 @@
                                                             <table class="table table-striped">
                                                                 <thead>
                                                                     <tr>
+                                                                        <th>ID</th>
                                                                         <th>Product</th>
                                                                         <th>Type</th>
                                                                         <th>Remaining amount</th>
@@ -133,128 +134,19 @@
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
-                                                                
                                                                 <tbody>
+                                                                @foreach($product as $row)
                                                                     <tr>
-                                                                        <td>
-                                                                            <div class="task-contain">
-                                                                                <h6 class="bg-c-blue d-inline-block text-center">O</h6>
-                                                                                <p class="d-inline-block m-l-20">Orange</p>
-                                                                            </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">Summer</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">392</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button href="" class="buttondelete">Delete</button>
-                                                                        </td>
+                                                                        <td>{{$row->id }}</td>
+                                                                        <td>{{$row->name }}</td>
+                                                                        <td>{{$row->detail }}</td>
+                                                                        <td>{{$row->price }}</td>
+                                                                        <td><a href="{{url('/admin/product/edit')}}">
+                                                                        <button class="">Modify</button></a></td> 
+                                                                        <form><td><button type="delete" class="delete">
+                                                                        Delete</button></td></form>
                                                                     </tr>
-                                                                    <tr>
-                                                                    <td>
-                                                                        <div class="task-contain">
-                                                                            <h6 class="bg-c-blue d-inline-block text-center">P</h6>
-                                                                            <p class="d-inline-block m-l-20">Banana</p>
-                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">Summer</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">68</p>
-                                                                        </td>
-                                                                        <<td>
-                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button href="" class="buttondelete">Delete</button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                        <div class="task-contain">
-                                                                            <h6 class="bg-c-blue d-inline-block text-center">P</h6>
-                                                                            <p class="d-inline-block m-l-20">Watermalon</p>
-                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">Summer</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">157</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button href="" class="buttondelete">Delete</button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                        <div class="task-contain">                                                                           
-                                                                            <h6 class="bg-c-blue d-inline-block text-center">P</h6>
-                                                                            <p class="d-inline-block m-l-20">Papaya</p>
-                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">Summer</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">234</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button href="" class="buttondelete">Delete</button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                        <div class="task-contain">
-                                                                            <h6 class="bg-c-blue d-inline-block text-center">A</h6>
-                                                                            <p class="d-inline-block m-l-20">Apple</p>
-                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">Summer</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">53</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button class="buttonmodfily"><a href="{{url ('/admin/product/edit')}}">Modfily </a></button>
-                                                                        </td>
-                                                                        <td>
-                                                                            <button href="" class="buttondelete">Delete</button>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                        <div class="task-contain">
-                                                                            <h6 class="bg-c-blue d-inline-block text-center"></h6>
-                                                                            <p class="d-inline-block m-l-20">Sum</p>
-                                                                        </div>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">-</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">634</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">-</p>
-                                                                        </td>
-                                                                        <td>
-                                                                            <p class="d-inline-block m-r-20">-</p>
-                                                                        </td>
-                                                                    </tr>
+                                                                @endforeach
                                                                 </tbody>
                                                             </table>
                                                         </div>
