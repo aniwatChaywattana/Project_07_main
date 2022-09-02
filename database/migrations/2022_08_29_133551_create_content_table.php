@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name')->nullable()->comment('ชื่อหมวดหมู่สินค้า');
             $table->string('image')->nullable()->comment('รูปสินค้า');
             $table->string('detail')->nullable()->comment('รายละเอียดสินค้า');
+            $table->integer('id_user')->nulltable()->comment('id user');
             $table->integer('created_by')->nullable()->comment('user ที่เพิ่ม');
             $table->integer('updated_by')->nullable()->comment('user ที่แก้ไข');
             $table->integer('delete_by')->nulltable()->comment('user ที่ลบ');

@@ -221,7 +221,7 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button href="" class="buttonadd">Add</button>    
+                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>  
                                                     </div>
                                                     
                                                     <div class="card-block p-b-10">

@@ -26,6 +26,6 @@ class AddController extends Controller
         $read = user::all();
 
         // return view('home');
-        return view('adminpage.adminproduct.add' , compact('read'));
+        return view('adminpage.adminproduct.add', compact('read'));
     }
 }

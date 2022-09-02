@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\user;
+use App\Models\Product;
+
+
+
 class ProductController extends Controller
 {
     /**
@@ -23,9 +26,29 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $read = user::all();
+        $product = Product::all();
+        return view('adminpage.adminproduct.product' , compact('product'));
+    }
 
-        // return view('home');
-        return view('adminpage.adminproduct.product' , compact('read'));
+    public function formadd()
+    {
+        //C1->From
+        return view('adminpage.adminproduct.add');
+    }
+
+    public function add(Request $request)
+    {
+        //C2->create
+        $request->validate([
+            'name' => 'nullable',
+            'detail' => 'nullable',
+            'price' => 'nullable',
+            // 'picture'=>'null',
+        ]);
+        
+        Product::create($request->all());
+
+        return redirect()->route('adminpage.adminproduct.product');
+                       
     }
 }
