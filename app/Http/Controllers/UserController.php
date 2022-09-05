@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -23,7 +24,27 @@ class UserController extends Controller
      */
     public function index()
     {
-        // return view('home');
-        return view('adminpage.adminuser.user');
+        $user = User::all();
+        return view('adminpage.adminuser.user' , compact('user'));
+    }
+
+    public function formadd()
+    {
+        //C1->From
+        return view('adminpage.adminuser.add');
+    }
+
+    public function add(Request $request)
+    {
+        //C2->create
+        $request->validate([
+            'name' => 'nullable',
+            // 'picture'=>'null',
+        ]);
+        
+        User::create($request->all());
+
+        return redirect()->route('adminpage.adminuser.user');
+                       
     }
 }

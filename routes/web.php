@@ -45,20 +45,35 @@ Auth::routes();
 
 
 Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');
+
 // R product
 Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'index'])->name('adminpage.adminproduct.product');
-
 // C product
 Route::get('/admin/product/add',[App\Http\Controllers\ProductController::class,'formadd'])->name('adminpage.adminproduct.formadd');
-
 Route::post('/admin/product/add',[App\Http\Controllers\ProductController::class,'add'])->name('adminpage.adminproduct.add');
 // U product 
 
 Route::get('/admin/product/edit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.adminproduct.edit');
 
+//R typeproduct
 Route::get('/admin/typeproduct',[App\Http\Controllers\TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');
-Route::get('/admin/info',[App\Http\Controllers\InfoController::class,'index'])->name('adminpage.admininfo.info');
+// C typeproduct
+Route::get('/admin/typeproduct/add',[App\Http\Controllers\TypeproductController::class,'formadd'])->name('adminpage.admintypeproduct.formadd');
+Route::post('/admin/typeproduct/add',[App\Http\Controllers\TypeproductController::class,'add'])->name('adminpage.admintypeproduct.add');
+// U typeproduct 
+
+Route::get('/admin/typeproduct/edit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.admintypeproduct.edit');
+
+//R user
 Route::get('/admin/user',[App\Http\Controllers\UserController::class,'index'])->name('adminpage.adminuser.user');
+// C user
+Route::get('/admin/user/add',[App\Http\Controllers\UserController::class,'formadd'])->name('adminpage.adminuser.formadd');
+Route::post('/admin/user/add',[App\Http\Controllers\UserController::class,'add'])->name('adminpage.adminuser.add');
+// U user
+
+Route::get('/admin/user/edit',[App\Http\Controllers\UserController::class,'index'])->name('adminpage.adminuser.edit');
+
+Route::get('/admin/info',[App\Http\Controllers\InfoController::class,'index'])->name('adminpage.admininfo.info');
 
 // Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');
 
