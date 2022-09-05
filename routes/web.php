@@ -43,8 +43,14 @@ Auth::routes();
 //   Auth::routes();
 //  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
+// R Home
 Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');
+// C Home
+Route::get('/admin/homeadd',[App\Http\Controllers\ProductController::class,'formadd'])->name('adminpage.adminproduct.formadd');
+Route::post('/admin/homeadd',[App\Http\Controllers\ProductController::class,'add'])->name('adminpage.adminproduct.add');
+// U Home
+
+Route::get('/admin/homeedit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.adminproduct.edit');
 
 // R product
 Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'index'])->name('adminpage.adminproduct.product');

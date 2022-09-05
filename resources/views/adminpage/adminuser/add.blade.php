@@ -81,32 +81,32 @@
                     </li>
                     <li class="active">
                         <a href="{{url ('/admin/product')}}">
-                            <span class="pcoded-micon"><i class="ti-home"></i><b>P</b></span>
+                            <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
                     <li class="active">
                         <a href="{{url ('/admin/typeproduct')}}">
-                            <span class="pcoded-micon"><i class="ti-home"></i><b>T</b></span>
+                            <span class="pcoded-micon"><i class="ti-package"></i><b>T</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
                     <li class="active">
                         <a href="{{url ('/admin/user')}}">
-                            <span class="pcoded-micon"><i class="ti-home"></i><b>U</b></span>
+                            <span class="pcoded-micon"><i class="ti-user"></i><b>U</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
                     </li>
-                    <li class="active">
+                    <!-- <li class="active">
                         <a href="{{url ('/admin/info')}}">
-                            <span class="pcoded-micon"><i class="ti-home"></i><b>I</b></span>
+                            <span class="pcoded-micon"><i class="ti-info"></i><b>I</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Info</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>

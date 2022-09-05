@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Home;
 use Illuminate\Http\Request;
+use App\Models\Product;
+
+
 
 class HomeController extends Controller
 {
@@ -23,7 +27,29 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // return view('home');
-        return view('adminpage.adminhome');
+        $home = Home::all();
+        return view('adminpage.adminhome' , compact('home'));
+    }
+
+    public function formadd()
+    {
+        //C1->From
+        return view('adminpage.homeadd');
+    }
+
+    public function add(Request $request)
+    {
+        //C2->create
+        $request->validate([
+            'name' => 'nullable',
+            'detail' => 'nullable',
+            'price' => 'nullable',
+            // 'picture'=>'null',
+        ]);
+        
+        Home::create($request->all());
+
+        return redirect()->route('adminpage.adminhome');
+                       
     }
 }
