@@ -26,8 +26,8 @@
                                 <div class="col-lg-7">
                                     <h1  style="font-family:'Sriracha', cursive ; " style="margin-top: 5rem;" class=" mb-5 animated slideInDown">คุณภาพไม่เปลี่ยนแปลงต้อง</h1>
                                     <h1 style="font-family:'Sriracha', cursive ; " style="margin-bottom: 5rem;" class="display-2 text-primary mb-5 animated slideInDown" >"คุณน้อยผลไม้"</h1>
-                                    <a style="margin-left: 0rem;" href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">Products</a>
-                                    <a href="contact.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">contact</a>
+                                    <a style="margin-left: 0rem;" href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">สินค้า</a>
+                                    <a href="contact.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">ติดต่อ</a>
                                 </div>
                             </div>
                         </div>
