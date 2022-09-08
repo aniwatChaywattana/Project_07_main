@@ -127,7 +127,7 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th>ID</th>
-                                                                        <th>Product</th>
+                                                                        <th>Type</th>
                                                                         <th>Modify</th>
                                                                         <th>Delete</th>
                                                                     </tr>
@@ -138,7 +138,6 @@
                                                                     <tr>
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
-                                                                        <td>{{$row->detail }}</td>
                                                                         <td><a href="{{url('/admin/typeproduct/edit')}}">
                                                                         <button class="">Modify</button></a></td> 
                                                                         <form><td><button type="delete" class="delete">
