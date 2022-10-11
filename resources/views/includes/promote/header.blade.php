@@ -49,7 +49,7 @@
                             <a href="{{url ('/blog')}} " class="dropdown-item">บทความน่าสนใจอื่นๆ</a>
                             <a href="{{url ('/feature')}} " class="dropdown-item">เกี่ยวกับสินค้าของเรา</a>
                             <a href="{{url ('/testimonial')}} " class="dropdown-item">ความคิดเห็นจากผู้ใช้บริการ</a>
-                            <a href="404.php" class="dropdown-item">404 Page</a>
+                            <!-- <a href="404.php" class="dropdown-item">404 Page</a> -->
                         </div>
                     </div>
                     <a href="{{url ('/contact')}}" class="nav-item nav-link">ติดต่อ</a>
