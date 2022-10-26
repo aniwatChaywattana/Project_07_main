@@ -177,15 +177,9 @@
                                                                             <form action="{{route('adminpage.adminuser.add')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
-                                                                                    <label for="examplename">name</label>
+                                                                                    <label for="examplename">Project&Task</label>
                                                                                     <input type="text" name="name" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
-                                                                                </div>
-                                                                                <div class="form-group row">
-                                                                                    <label class="col-sm-2 col-form-label">Upload File</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="file" class="form-control">
-                                                                                    </div>
                                                                                 </div>
                                                                                 <button type="submit" class="btn btn-primary mr-2">Add</button>
                                                                                 <button type="rest" class="btn btn-primary mr-2">Reset</button>

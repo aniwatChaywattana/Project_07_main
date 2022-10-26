@@ -47,4 +47,11 @@ class UserController extends Controller
         return redirect()->route('adminpage.adminuser.user');
                        
     }
+    public function edit()
+    {
+        $read = User::all();
+
+        // return view('home');
+        return view('adminpage.user.edit' , compact('read'));
+    }
 }

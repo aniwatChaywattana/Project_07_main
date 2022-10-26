@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\TypeProducts;
+use App\Models\user;
 
 class TypeproductController extends Controller
 {
@@ -46,5 +47,12 @@ class TypeproductController extends Controller
 
         return redirect()->route('adminpage.admintypeproduct.typeproduct');
                        
+    }
+    public function edit()
+    {
+        $read = user::all();
+
+        // return view('home');
+        return view('adminpage.admintypeproduct.edit' , compact('read'));
     }
 }

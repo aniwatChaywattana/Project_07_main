@@ -175,7 +175,7 @@
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
                                                                             <form action="{{route('adminpage.adminproduct.add')}}"method="POST">
-                                                                            @csrf
+                                                                                @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>
                                                                                     <input type="text" name="name" class="form-control" id="

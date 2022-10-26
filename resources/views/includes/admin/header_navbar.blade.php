@@ -61,13 +61,6 @@
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="active">
-                                    <a href="{{url ('/admin/info')}}">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>I</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Info</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
                             </ul>
         <ul class="pcoded-item pcoded-left-item">
             

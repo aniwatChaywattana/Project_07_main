@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\User;
 
 
 
@@ -50,5 +51,12 @@ class ProductController extends Controller
 
         return redirect()->route('adminpage.adminproduct.product');
                        
+    }
+    public function edit()
+    {
+        $read = user::all();
+
+        // return view('home');
+        return view('adminpage.adminproduct.edit' , compact('read'));
     }
 }

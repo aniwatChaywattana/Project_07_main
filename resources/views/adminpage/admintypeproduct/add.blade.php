@@ -177,7 +177,7 @@
                                                                             <form action="{{route('adminpage.admintypeproduct.add')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
-                                                                                    <label for="examplename">name</label>
+                                                                                    <label for="examplename">Type</label>
                                                                                     <input type="text" name="name" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
                                                                                 </div>
