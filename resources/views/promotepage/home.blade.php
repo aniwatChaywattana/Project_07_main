@@ -73,34 +73,34 @@
 
 
     <!-- Feature Start -->
-    <div class="container-fluid bg-light bg-icon my-5 py-6">
+    <div class="container-fluid bg-light bg-icon py-6">
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h1 class="display-5 mb-3">เกี่ยวกับสินค้าของเรา </h1>
+                <h1 class="display-5 mb-3">เกี่ยวกับสินค้าของเรา</h1>
                 <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="{{asset('images/icon-1.png')}}" alt="">
-                        <h4 class="mb-3">Natural Process</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <h4 class="mb-3">สถานที่นำเข้าผลไม้</h4>
+                        <p class="mb-4">ทางร้านค้าของเราได้ทำการคัดสรรคสวนที่ปลูกผลไม้อย่างดีเพื่อให้ได้ผลไม้ที่มีคุณภาพที่สุด</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="{{asset('images/icon-2.png')}}" alt="">
-                        <h4 class="mb-3">Organic Products</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <img class="img-fluid mb-4" src="{{asset('images/icon-2.png')}} " alt="">
+                        <h4 class="mb-3">วิธีที่เราดูแล และ ปลูกผลไม้ </h4>
+                        <p class="mb-4">เราได้คัดสรรคและคัดแยกวิธีการปลูกเป็นอย่างดี เพื่อให้ลูกค้าของเราได้ของที่สดใหม่ ปลอดภัยไร้สารพิษ</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="bg-white text-center h-100 p-4 p-xl-5">
-                        <img class="img-fluid mb-4" src="{{asset('images/icon-3.png')}}" alt="">
-                        <h4 class="mb-3">Biologically Safe</h4>
-                        <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
+                        <img class="img-fluid mb-4" src="{{asset('images/icon-3.png')}} " alt="">
+                        <h4 class="mb-3">วิธีการคัดแยกสินค้า</h4>
+                        <p class="mb-4">เราได้คัดสรรคเป็นอย่างดีเพื่อให้ลูกค้าเราพึงพอใจมากที่สุด</p>
                         <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
                     </div>
                 </div>
@@ -684,7 +684,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light bg-icon py-6 mb-5">
+    <!-- <div class="container-fluid bg-light bg-icon py-6 mb-5">
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-3">ความคิดเห้นจากผู้ใช้บริการ</h1>
@@ -737,7 +737,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -746,13 +746,13 @@
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-3">บทความน่าสนใจอื่นๆ</h1>
-                <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                <p>คุณสนใจอะไรลองดููได้เลย!</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid" src="{{asset('images/blog-1.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('images/Fruit Know 1.jpg')}}" alt="">
                     <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <p><a class="d-block h5 lh-base mb-4" href="https://hd.co.th/salak-and-salacca-same-or-not">สละ ระกำ เหมือนกันหรือไม่ มีประโยชน์อย่างไร</a></p>
                         <div class="text-muted border-top pt-4">
                             <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
                             <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2045</small>
@@ -760,9 +760,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid" src="{{asset('images/blog-2.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('images/Fruit Know 2.jpg')}}" alt="">
                     <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <a class="d-block h5 lh-base mb-4" href="https://hd.co.th/mulberry">มัลเบอรี่ คืออะไร? ข้อมูล พลังงาน ประโยชน์ และวิธีกิน</a>
                         <div class="text-muted border-top pt-4">
                             <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
                             <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2045</small>
@@ -770,9 +770,9 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="{{asset('images/blog-3.jpg')}}" alt="">
+                    <img class="img-fluid" src="{{asset('images/Fruit Know 3.jpg')}}" alt="">
                     <div class="bg-light p-4">
-                        <a class="d-block h5 lh-base mb-4" href="">How to cultivate organic fruits and vegetables in own firm</a>
+                        <a class="d-block h5 lh-base mb-4" href="https://hd.co.th/benefits-of-grapes">องุ่น ผลไม้ที่ให้ประโยชน์มากกว่ารสหวาน</a>
                         <div class="text-muted border-top pt-4">
                             <small class="me-3"><i class="fa fa-user text-primary me-2"></i>Admin</small>
                             <small class="me-3"><i class="fa fa-calendar text-primary me-2"></i>01 Jan, 2045</small>
