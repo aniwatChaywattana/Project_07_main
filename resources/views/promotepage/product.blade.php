@@ -560,7 +560,7 @@
                             </div>
                         </div>
                         <div class="col-12 text-center">
-                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">Browse More Products</a>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="">ดูสินค้าเพิ่มเติม</a>
                         </div>
                     </div>
                 </div>
@@ -588,7 +588,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light bg-icon py-6">
+    <!-- <div class="container-fluid bg-light bg-icon py-6">
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-3">ความคิดเห็นจากผู้ใช้บริการ</h1>
@@ -641,6 +641,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
     @stop
