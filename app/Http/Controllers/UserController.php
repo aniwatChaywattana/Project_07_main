@@ -52,6 +52,6 @@ class UserController extends Controller
         $read = User::all();
 
         // return view('home');
-        return view('adminpage.user.edit' , compact('read'));
+        return view('adminpage.adminuser.edit' , compact('read'));
     }
 }
