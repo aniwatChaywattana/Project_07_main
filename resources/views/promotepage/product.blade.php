@@ -3,7 +3,7 @@
 <!-- Page Header Start -->
 <div style="background:  url( {{asset('images/carousel-1.jpg')}} ) top right no-repeat;" class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-3 animated slideInDown">สินค้า</h1>
+            <h1 style="font-family:'Sriracha', cursive ;" class="display-3 mb-3 animated slideInDown">สินค้า</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
@@ -20,7 +20,7 @@
             <div class="row g-0 gx-5 align-items-end">
                 <div class="col-lg-6">
                     <div class="section-header text-start mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                        <h1 class="display-5 mb-3">สินค้าทั้งหมด</h1>
+                        <h1  class="display-5 mb-3">สินค้าทั้งหมด</h1>
                         <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                     </div>
                 </div>

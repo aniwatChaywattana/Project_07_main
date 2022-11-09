@@ -4,7 +4,7 @@
  <!-- Page Header Start -->
  <div style="background:  url( {{asset('images/carousel-1.jpg')}} ) top right no-repeat;" class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-3 animated slideInDown">ช่องทางการติดต่อ</h1>
+            <h1 style="font-family:'Sriracha', cursive ;" class="display-3 mb-3 animated slideInDown">ช่องทางการติดต่อ</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
@@ -26,13 +26,13 @@
             <div class="row g-5 justify-content-center">
                 <div class="col-lg-5 col-md-12 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="bg-primary text-white d-flex flex-column justify-content-center h-100 p-5">
-                        <h5 class="text-white">Call Us</h5>
+                        <h5 class="text-white">เบอร์โทร</h5>
                         <p class="mb-5"><i class="fa fa-phone-alt me-3"></i>+66 092-602-0762</p>
-                        <h5 class="text-white">Email Us</h5>
+                        <h5 class="text-white">Email</h5>
                         <p class="mb-5"><i class="fa fa-envelope me-3"></i>nicelek20119@gmail.com</p>
-                        <h5 class="text-white">Office Address</h5>
-                        <p class="mb-5"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <h5 class="text-white">Follow Us</h5>
+                        <h5 class="text-white">ที่อยู่</h5>
+                        <p class="mb-5"><i class="fa fa-map-marker-alt me-3"></i>24 ซอย ประชาราษฏร์ 5 ตำบล ตลาดขวัญ อำเภอเมืองนนทบุรี นนทบุรี 11000 </p>
+                        <h5 class="text-white">ช่องทางการติดตาม</h5>
                         <div class="d-flex pt-2">
                             <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>

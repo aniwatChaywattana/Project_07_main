@@ -4,7 +4,7 @@
  <!-- Page Header Start -->
  <div style="background :  url({{asset('images/carousel-1.jpg')}} ) top right no-repeat;" class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-3 animated slideInDown">เกี่ยวกับพวกเรา</h1>
+            <h1 style="font-family:'Sriracha', cursive ;" class="display-3 mb-3 animated slideInDown">เกี่ยวกับพวกเรา</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="text-body" href="#">หน้าแรก</a></li>
@@ -44,11 +44,11 @@
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
-                    <h1 class="display-5 text-white mb-3">ติดต่อกับร้าค้า</h1>
-                    <p class="text-white mb-0">ร้านค้าของเราตั่งอยู่ที่ จังหวัดนนทบุรี ถ.กระชาราษฏ์ ซึ่งใกล้ๆกับท่าน้ำนนท์ และสามารถ ติดต่อเราได้ทางเบอร์โทร 888-888-8888 หรือ เพจเฟซบุ๊ค FB: บลาๆ</p>
+                    <h1  class="display-5 text-white mb-3">ติดต่อกับร้าค้า</h1>
+                    <p class="text-white mb-0">ร้านค้าของเราตั้งอยู่ที่ 24 ซอย ประชาราษฏร์ 5 ตำบล ตลาดขวัญ อำเภอเมืองนนทบุรี นนทบุรี 11000</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">มาหาเรา</a>
+                    <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="{{url ('/contact')}}">ติดต่อกับพวกเรา</a>
                 </div>
             </div>
         </div>
