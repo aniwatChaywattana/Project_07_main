@@ -140,7 +140,7 @@
                                                                         <td>{{$row->name }}</td>
                                                                         <td><a href="{{url('/admin/typeproduct/edit')}}">
                                                                         <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
+                                                                        <td><a href="{{url('/admin/typeproduct/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></td></a>
                                                                         Delete</button></td></form>
                                                                     </tr>
                                                                 @endforeach

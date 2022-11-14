@@ -55,4 +55,9 @@ class TypeproductController extends Controller
         // return view('home');
         return view('adminpage.admintypeproduct.edit' , compact('read'));
     }
+    public function destroy($id){ 
+        $typeproduct= TypeProducts::find($id);
+        $typeproduct->delete();
+        return redirect()->route('adminpage.admintypeproduct.typeproduct');
+    }
 }

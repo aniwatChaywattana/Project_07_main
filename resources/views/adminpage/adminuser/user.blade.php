@@ -143,7 +143,7 @@
                                                                         <td>{{$row->detail }}</td>
                                                                         <td><a href="{{url('/admin/user/edit')}}">
                                                                         <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
+                                                                        <td><a href="{{url('/admin/user/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></td></a>
                                                                         Delete</button></td></form>
                                                                     </tr>
                                                                 @endforeach

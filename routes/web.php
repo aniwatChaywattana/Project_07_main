@@ -59,7 +59,10 @@ Route::get('/admin/product/add',[App\Http\Controllers\ProductController::class,'
 Route::post('/admin/product/add',[App\Http\Controllers\ProductController::class,'add'])->name('adminpage.adminproduct.add');
 // U product 
 
-Route::get('/admin/product/edit',[App\Http\Controllers\ProductController::class,'edit'])->name('adminpage.adminproduct.edit');
+
+Route::get('/admin/product/edit/{id}', [App\Http\Controllers\ProductController::class, 'edit'])->name('adminpage.adminproduct.edit');
+Route::post('/admin/product/update/{id}', [App\Http\Controllers\ProductController::class, 'update'])->name('adminpage.adminproduct.update');
+Route::get('/admin/product/destroy/{id}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('adminpage.adminproduct.destroy');
 
 //R typeproduct
 Route::get('/admin/typeproduct',[App\Http\Controllers\TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');
@@ -68,7 +71,9 @@ Route::get('/admin/typeproduct/add',[App\Http\Controllers\TypeproductController:
 Route::post('/admin/typeproduct/add',[App\Http\Controllers\TypeproductController::class,'add'])->name('adminpage.admintypeproduct.add');
 // U typeproduct 
 
-Route::get('/admin/typeproduct/edit',[App\Http\Controllers\TypeproductController::class,'edit'])->name('adminpage.admintypeproduct.edit');
+Route::get('/admin/typeproduct/edit/{id}', [App\Http\Controllers\TypeproductController::class, 'edit'])->name('adminpage.admintypeproduct.edit');
+Route::post('/admin/typeproduct/update/{id}', [App\Http\Controllers\TypeproductController::class, 'update'])->name('adminpage.admintypeproduct.update');
+Route::get('/admin/typeproduct/destroy/{id}', [App\Http\Controllers\TypeproductController::class, 'destroy'])->name('adminpage.admintypeproduct.destroy');
 
 //R user
 Route::get('/admin/user',[App\Http\Controllers\UserController::class,'index'])->name('adminpage.adminuser.user');
@@ -77,7 +82,9 @@ Route::get('/admin/user/add',[App\Http\Controllers\UserController::class,'formad
 Route::post('/admin/user/add',[App\Http\Controllers\UserController::class,'add'])->name('adminpage.adminuser.add');
 // U user
 
-Route::get('/admin/user/edit',[App\Http\Controllers\UserController::class,'edit'])->name('adminpage.adminuser.edit');
+Route::get('/admin/user/edit/{id}', [App\Http\Controllers\UserController::class, 'edit'])->name('adminpage.adminuser.edit');
+Route::post('/admin/user/update/{id}', [App\Http\Controllers\UserController::class, 'update'])->name('adminpage.adminuser.update');
+Route::get('/admin/user/destroy/{id}', [App\Http\Controllers\UserController::class, 'destroy'])->name('adminpage.adminuser.destroy');
 
 
 // Route::get('/admin/home',[App\Http\Controllers\HomeController::class,'index'])->name('adminpage.adminhome');

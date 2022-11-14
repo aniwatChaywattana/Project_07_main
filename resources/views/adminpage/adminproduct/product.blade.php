@@ -129,7 +129,8 @@
                                                                         <th>ID</th>
                                                                         <th>Product</th>
                                                                         <th>Type</th>
-                                                                        <th>Remaining amount</th>
+                                                                        <th>Price</th>
+                                                                        <th>Image</th>
                                                                         <th>Modify</th>
                                                                         <th>Delete</th>
                                                                     </tr>
@@ -141,9 +142,10 @@
                                                                         <td>{{$row->name }}</td>
                                                                         <td>{{$row->detail }}</td>
                                                                         <td>{{$row->price }}</td>
+                                                                        <td>{{$row->img }}</td>
                                                                         <td><a href="{{url('/admin/product/edit')}}">
                                                                         <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
+                                                                        <td><a href="{{url('/admin/product/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></td></a>
                                                                         Delete</button></td></form>
                                                                     </tr>
                                                                 @endforeach

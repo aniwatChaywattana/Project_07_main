@@ -52,11 +52,61 @@ class ProductController extends Controller
         return redirect()->route('adminpage.adminproduct.product');
                        
     }
-    public function edit()
+    
+    public function read()
     {
         $read = user::all();
 
         // return view('home');
         return view('adminpage.adminproduct.edit' , compact('read'));
+    }
+
+    public function edit($id){
+        $product = Product::find($id);
+        return view('adminpage.adminproduct.edit',compact('read'));
+    }
+
+    public function update(Request $request, $id){
+        if ($request->hasFile('picture')) {
+
+            $product = Product::find($id);
+
+             // ลบรูปภาพ
+
+            if ($product->picture != 'nopic.jpg') {
+
+                File::delete(public_path() . '/admin/upload/product/' . $product->picture);
+
+            }
+
+            //เพิ่มรูปภาพ
+
+            $filename = Str::random(10) . '.' . $request->file('picture')->getClientOriginalExtension();
+
+            $request->file('picture')->move(public_path() . '/admin/upload/product/', $filename);
+
+            Image::make(public_path() . '/admin/upload/product/' . $filename);
+
+            $product->picture = $filename;
+
+            //เพิ่มฟิล์ดในกรณีที่มีรูปภาพ
+
+            $product->name = $request->name;
+            $product->detail = $request->detail;
+
+
+        } else{
+
+        $product = Product::find($id);
+        $product->name = $request->name;
+        $product->detail = $request->detail;
+    }
+        $product->update();
+        return redirect()->route('adminpage.adminproduct.product');
+    }
+    public function destroy($id){ 
+        $product= Product::find($id);
+        $product->delete();
+        return redirect()->route('adminpage.adminproduct.product');
     }
 }
