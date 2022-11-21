@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\welcomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -84,3 +85,4 @@ Route::get('/admin/user/edit',[App\Http\Controllers\UserController::class,'edit'
 
 
 //  End::admin//
+// Route::get('/',[welcomeController::class,'index']);

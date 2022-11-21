@@ -571,7 +571,7 @@
 
 
     <!-- Firm Visit Start -->
-    <div class="container-fluid bg-primary bg-icon mt-5 py-6">
+    <!-- <div class="container-fluid bg-primary bg-icon mt-5 py-6">
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
@@ -583,7 +583,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Firm Visit End -->
 
 
