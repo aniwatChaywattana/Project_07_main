@@ -69,7 +69,7 @@ class ProductController extends Controller
 
         ]);
 
-        return redirect()->route('adminpage.admincontent.content');
+        return redirect()->route('adminpage.adminproduct.product');
 
     }
 
@@ -103,7 +103,7 @@ class ProductController extends Controller
 
             $file = $request->file('image');
             $filename = date('YmdHi') . '_' . $file->getClientOriginalName();
-            $file->move( public_path('content'), $filename );
+            $file->move( public_path('product'), $filename );
 
         }else{
 
@@ -120,7 +120,7 @@ class ProductController extends Controller
 
         ]);
 
-        return redirect()->route('adminpage.admincontent.product');
+        return redirect()->route('adminpage.adminproduct.product');
 
     }
 

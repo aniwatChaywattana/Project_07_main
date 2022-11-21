@@ -174,7 +174,7 @@
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form action="{{route('adminpage.adminproduct.update',$product->id) }}" method="POST">
+                                                                            <form action="{{route('adminpage.adminproduct.update',$product->id) }}" method="post" enctype="multipart/form-data">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>

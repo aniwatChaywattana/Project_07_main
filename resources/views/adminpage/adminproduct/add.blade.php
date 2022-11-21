@@ -181,7 +181,7 @@
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form action="{{route('adminpage.adminproduct.add')}}" method="POST">
+                                                                            <form action="{{route('adminpage.adminproduct.add')}}" method="post" enctype="multipart/form-data">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>
