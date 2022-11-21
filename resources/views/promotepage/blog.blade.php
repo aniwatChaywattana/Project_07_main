@@ -3,7 +3,7 @@
  <!-- Page Header Start -->
  <div style="background:  url( {{asset('images/carousel-1.jpg') }} ) top right no-repeat;" class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
         <div class="container">
-            <h1 class="display-3 mb-3 animated slideInDown">บทความน่าสนใจอื่นๆ</h1>
+            <h1 style="font-family:'Sriracha', cursive ;" class="display-3 mb-3 animated slideInDown">บทความน่าสนใจอื่นๆ</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>

@@ -11,8 +11,8 @@
                             <div class="row justify-content-start">
                                 <div class="col-lg-7">
                                 <h1 style="font-family:'Sriracha', cursive ;"  class="display-2 text-primary mb-5 animated slideInDown">ผลไม้คุณภาพดีต้องที่ "คุณน้อยผลไม้"</h1>
-                                    <a style="margin-left: 10rem;"   style="font-size: 30px;" href="product.php" class ="btn btn-primary rounded-pill py-sm-3 px-sm-5">สินค้า</a>
-                                    <a  href="contact.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">ติดต่อ</a>
+                                    <a style="margin-left: 10rem;"   style="font-size: 30px;" href="{{url ('/product')}}" class ="btn btn-primary rounded-pill py-sm-3 px-sm-5">สินค้า</a>
+                                    <a  href="{{url ('/contact')}}" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">ติดต่อ</a>
                                 </div>
                             </div>
                         </div>
@@ -26,8 +26,8 @@
                                 <div class="col-lg-7">
                                     <h1  style="font-family:'Sriracha', cursive ; " style="margin-top: 5rem;" class=" mb-5 animated slideInDown">คุณภาพไม่เปลี่ยนแปลงต้อง</h1>
                                     <h1 style="font-family:'Sriracha', cursive ; " style="margin-bottom: 5rem;" class="display-2 text-primary mb-5 animated slideInDown" >"คุณน้อยผลไม้"</h1>
-                                    <a style="margin-left: 0rem;" href="" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">สินค้า</a>
-                                    <a href="contact.php" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">ติดต่อ</a>
+                                    <a style="margin-left: 0rem;" href="{{url ('/product')}}" class="btn btn-primary rounded-pill py-sm-3 px-sm-5">สินค้า</a>
+                                    <a href="{{url ('/contact')}}" class="btn btn-secondary rounded-pill py-sm-3 px-sm-5 ms-3">ติดต่อ</a>
                                 </div>
                             </div>
                         </div>
@@ -672,7 +672,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
                     <h1 class="display-5 text-white mb-3">ติดต่อร้าค้า</h1>
-                    <p class="text-white mb-0">ร้านตั้งอยู่ที่</p>
+                    <p class="text-white mb-0">ร้านตั้งอยู่ที่ 24 ซอย ประชาราษฏร์ 5 ตำบล ตลาดขวัญ อำเภอเมืองนนทบุรี นนทบุรี 11000</p>
                 </div>
                 <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
                     <a class="btn btn-lg btn-secondary rounded-pill py-3 px-5" href="">ดูรายละเอียดเพิ่มเติม</a>
