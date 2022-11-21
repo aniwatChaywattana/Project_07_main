@@ -33,7 +33,7 @@
     border-radius: 15px;
 }
 </style>
-                  
+
 <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
@@ -126,7 +126,7 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/typeproduct/add')}}">Add</a></button>     
+                                                        <button class="buttonadd"><a href="{{url ('/admin/typeproduct/add')}}">Add</a></button>
                                                     </div>
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
@@ -135,17 +135,17 @@
                                                                     <tr>
                                                                         <th>ID</th>
                                                                         <th>Type</th>
-                                                                        <th>Modify</th>
+                                                                        <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
-                                                                
+
                                                                 <tbody>
                                                                 @foreach($typeproduct as $row)
                                                                     <tr>
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
-                                                                        <td><a href="{{url('/admin/typeproduct/edit/'.$row->id)}}"><button  class="edit" >Modify</button></a></td>
+                                                                        <td><a href="{{url('/admin/typeproduct/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
                                                                         <td><a href="{{url('/admin/typeproduct/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
@@ -166,7 +166,7 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
+
 
 @stop

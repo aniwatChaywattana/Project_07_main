@@ -33,7 +33,7 @@
     border-radius: 15px;
 }
 </style>
-                  
+
 <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
@@ -126,7 +126,7 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/content/add')}}">Add</a></button>     
+                                                        <button class="buttonadd"><a href="{{url ('/admin/content/add')}}">Add</a></button>
                                                     </div>
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
@@ -137,11 +137,11 @@
                                                                         <th>Name</th>
                                                                         <th>Detail</th>
                                                                         <th>Image</th>
-                                                                        <th>Modify</th>
+                                                                        <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
-                                                                
+
                                                                 <tbody>
                                                                 @foreach($content as $row)
                                                                     <tr>
@@ -149,7 +149,7 @@
                                                                         <td>{{$row->name }}</td>
                                                                         <td>{{$row->detail }}</td>
                                                                         <td><img src="{{ asset('content/'.$row->image)}}" width="100px" height="80px" alt=""></td>
-                                                                        <td><a href="{{url('/admin/content/edit/'.$row->id)}}"><button  class="edit" >Modify</button></a></td>
+                                                                        <td><a href="{{url('/admin/content/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
                                                                         <td><a href="{{url('/admin/content/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
+
 
 @stop

@@ -32,7 +32,7 @@
     border-radius: 15px;
 }
 </style>
-                  
+
 <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
@@ -125,9 +125,9 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>     
+                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>
                                                     </div>
-                                                    
+
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
                                                             <table class="table table-striped">
@@ -138,7 +138,7 @@
                                                                         <th>Type</th>
                                                                         <th>Price</th>
                                                                         <th>Image</th>
-                                                                        <th>Modify</th>
+                                                                        <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
@@ -150,7 +150,7 @@
                                                                         <td>{{$row->detail }}</td>
                                                                         <td>{{$row->price }}</td>
                                                                         <td><img src="{{ asset('product/'.$row->image)}}" width="100px" height="80px" alt=""></td>
-                                                                        <td><a href="{{url('/admin/product/edit/'.$row->id)}}"><button  class="edit" >Modify</button></a></td>
+                                                                        <td><a href="{{url('/admin/product/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
                                                                         <td><a href="{{url('/admin/product/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
@@ -171,6 +171,6 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
+
 @stop
