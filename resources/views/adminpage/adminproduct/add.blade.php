@@ -80,6 +80,13 @@
                         </a>
                     </li>
                     <li class="active">
+                        <a href="{{url ('/admin/content')}}">
+                            <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                    <li class="active">
                         <a href="{{url ('/admin/product')}}">
                             <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -174,7 +181,7 @@
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form action="{{route('adminpage.adminproduct.add')}}"method="POST">
+                                                                            <form action="{{route('adminpage.adminproduct.add')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>
@@ -194,7 +201,7 @@
                                                                                 <div class="form-group row">
                                                                                     <label class="col-sm-2 col-form-label">Upload File</label>
                                                                                     <div class="col-sm-10">
-                                                                                        <input type="file" class="form-control">
+                                                                                        <input type="file" name="image" class="form-control" />
                                                                                     </div>
                                                                                 </div>
                                                                                 <button type="submit" class="btn btn-primary mr-2">Submit</button>

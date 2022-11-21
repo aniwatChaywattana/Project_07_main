@@ -80,6 +80,13 @@
                         </a>
                     </li>
                     <li class="active">
+                        <a href="{{url ('/admin/content')}}">
+                            <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                    <li class="active">
                         <a href="{{url ('/admin/product')}}">
                             <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -167,27 +174,30 @@
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form>
+                                                                            <form action="{{route('adminpage.adminproduct.update',$product->id) }}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>
-                                                                                    <input type="text" name="name" class="form-control" id="
+                                                                                    <input type="text" name="name" value="{{$product->name}}" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="exampledetail">detail</label>
-                                                                                    <input type="text" name="detail" class="form-control" id="
+                                                                                    <input type="text" name="detail" value="{{$product->detail}}" class="form-control" id="
                                                                                     exampleInputDetail" placeholder="detail">
                                                                                 </div>
                                                                                 <div class="form-group row">
                                                                                     <label for="examplePrice">price</label>
-                                                                                    <input type="number" name="price" class="form-control" id="
+                                                                                    <input type="number" name="price" value="{{$product->price}}" class="form-control" id="
                                                                                     exampleInputPrice" placeholder="price">
                                                                                 </div>
                                                                                 <div class="form-group row">
-                                                                                    <label class="col-sm-2 col-form-label">Upload File</label>
+                                                                                    <label
+                                                                                        class="col-sm-2 col-form-label">Upload File</label>
                                                                                     <div class="col-sm-10">
-                                                                                        <input type="file" class="form-control">
+                                                                                        <input type="file"
+                                                                                        name = "image"
+                                                                                        class="form-control">
                                                                                     </div>
                                                                                 </div>
                                                                                 <button type="submit" class="btn btn-primary mr-2">Submit</button>

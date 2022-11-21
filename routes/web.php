@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ContentController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,11 +55,23 @@ Route::post('/admin/homeadd',[App\Http\Controllers\ProductController::class,'add
 
 Route::get('/admin/homeedit',[App\Http\Controllers\EditController::class,'index'])->name('adminpage.adminproduct.edit');
 
+// R content
+Route::get('/admin/content',[ContentController::class,'index'])->name('adminpage.admincontent.content');
+// C content
+Route::get('/admin/content/add', [ContentController::class, 'formadd'])->name('adminpage.admincontent.formadd');
+Route::post('/admin/content/create',[ContentController::class, 'add'])->name('adminpage.admincontent.create');
+// U content
+
+
+Route::get('/admin/content/edit/{id}', [ContentController::class, 'edit'])->name('adminpage.admincontent.edit');
+Route::post('/admin/content/update/{id}', [ContentController::class, 'update'])->name('adminpage.admincontent.update');
+Route::get('/admin/content/destroy/{id}', [ContentController::class, 'destroy'])->name('adminpage.admincontent.destroy');
+
 // R product
-Route::get('/admin/product',[App\Http\Controllers\ProductController::class,'index'])->name('adminpage.adminproduct.product');
+Route::get('/admin/product',[ProductController::class,'index'])->name('adminpage.adminproduct.product');
 // C product
-Route::get('/admin/product/add',[App\Http\Controllers\ProductController::class,'formadd'])->name('adminpage.adminproduct.formadd');
-Route::post('/admin/product/add',[App\Http\Controllers\ProductController::class,'add'])->name('adminpage.adminproduct.add');
+Route::get('/admin/product/add',[ProductController::class,'formadd'])->name('adminpage.adminproduct.formadd');
+Route::post('/admin/product/create',[ProductController::class,'add'])->name('adminpage.adminproduct.create');
 // U product 
 
 

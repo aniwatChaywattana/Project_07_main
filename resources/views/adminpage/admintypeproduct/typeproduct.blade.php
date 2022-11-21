@@ -80,6 +80,13 @@
                                     </a>
                                 </li>
                                 <li class="active">
+                                    <a href="{{url ('/admin/content')}}">
+                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
                                     <a href="{{url ('/admin/product')}}">
                                         <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -138,10 +145,8 @@
                                                                     <tr>
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
-                                                                        <td><a href="{{url('/admin/typeproduct/edit')}}">
-                                                                        <button class="">Modify</button></a></td> 
-                                                                        <td><a href="{{url('/admin/typeproduct/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></td></a>
-                                                                        Delete</button></td></form>
+                                                                        <td><a href="{{url('/admin/typeproduct/edit/'.$row->id)}}"><button  class="edit" >Modify</button></a></td>
+                                                                        <td><a href="{{url('/admin/typeproduct/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
                                                                 </tbody>

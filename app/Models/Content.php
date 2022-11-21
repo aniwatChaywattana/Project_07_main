@@ -7,22 +7,25 @@ use Illuminate\Database\Eloquent\Model;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model
+class Content extends Model
 {
     use HasFactory;
 
-    protected $table = 'product';
+    protected $table = 'content';
+
     protected $fillable = [
+
         'name',
         'detail',
         'price',
-        'image', 
-        'create_by', 
-        'update_by', 
-        'delete_by', 
-        'create_at', 
-        'update_at', 
+        'image',
+        'create_by',
+        'update_by',
+        'delete_by',
+        'create_at',
+        'update_at',
         'delete_at',
-        
+
     ];
+
 }

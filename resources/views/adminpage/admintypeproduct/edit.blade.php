@@ -50,37 +50,58 @@
                     </div>
 
                     <div class="main-menu-content">
-                        <ul class="pcoded-item pcoded-left-item">
-                            <li class="active">
-                                <a href="{{url ('/admin/home')}}">
-                                    <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="{{url ('/admin/product')}}">
-                                    <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="{{url ('/admin/typeproduct')}}">
-                                    <span class="pcoded-micon"><i class="ti-package"></i><b>T</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
-                            </li>
-                            <li class="active">
-                                <a href="{{url ('/admin/user')}}">
-                                    <span class="pcoded-micon"><i class="ti-user"></i><b>U</b></span>
-                                    <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
-                                    <span class="pcoded-mcaret"></span>
-                                </a>
+                        <ul>
+                            <li class="more-details">
+                                <a href="#"><i class="ti-user"></i>View Profile</a>
+                                <a href="#!"><i class="ti-settings"></i>Settings</a>
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();" class="ti-layout-sidebar-left">{{ __('Logout') }}</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="pcoded-search">
+                    <span class="searchbar-toggle"> </span>
+                    <div class="pcoded-search-box ">
+                        <input type="text" placeholder="Search">
+                        <span class="search-icon"><i class="ti-search" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <br>
+                <ul class="pcoded-item pcoded-left-item">
+                    <li class="active">
+                        <a href="{{url ('/admin/home')}}">
+                            <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="{{url ('/admin/product')}}">
+                            <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="{{url ('/admin/typeproduct')}}">
+                            <span class="pcoded-micon"><i class="ti-package"></i><b>T</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="{{url ('/admin/user')}}">
+                            <span class="pcoded-micon"><i class="ti-user"></i><b>U</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
+                            <span class="pcoded-mcaret"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="pcoded-content">
             <div class="pcoded-inner-content">
@@ -104,7 +125,8 @@
                                                                     <div class="page-header-title">
                                                                         <i class="icofont icofont-file-code bg-c-blue"></i>
                                                                         <div class="d-inline">
-                                                                            <h4>Type Product Form Inputs</h4>
+                                                                            <h4>Basic Form Inputs</h4>
+                                                                            <span>Lorem ipsum dolor sit <code>amet</code>, consectetur adipisicing elit</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -145,13 +167,14 @@
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form>
+                                                                            <form action="{{route('adminpage.admintypeproduct.update',$typeproduct->id) }}" method="POST">
+                                                                                @csrf
                                                                                 <div class="form-group row">
-                                                                                    <label for="examplename">Type</label>
-                                                                                    <input type="text" name="name" class="form-control" id="
+                                                                                    <label for="examplename">name</label>
+                                                                                    <input type="text" name="name"  value="{{$typeproduct->name}}" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
-                                                                                </div>
-                                                                                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                                                                               </div>
+                                                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                                                                 <button type="rest" class="btn btn-primary mr-2">Reset</button>
                                                                                 <button class="btn btn-dark">Cancel</button>
                                                                             </form>

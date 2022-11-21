@@ -42,7 +42,8 @@
             <div class="pcoded-inner-navbar main-menu">
                 <div class="">
                     <div class="main-menu-header">
-                        <img class="img-40 img-radius" src="{{asset('template/admin/assets/images/avatar-4.jpg')}}" alt="User-Profile-Image">
+                        <img class="img-40 img-radius" src="{{asset('template/admin/assets/images/avatar-4.jpg')}}"
+                            alt="User-Profile-Image">
                         <div class="user-details">
                             <span>Noy Klayyam</span>
                             <span id="more-details">Shop owner<i class="ti-angle-down"></i></span>
@@ -55,7 +56,8 @@
                                 <a href="#"><i class="ti-user"></i>View Profile</a>
                                 <a href="#!"><i class="ti-settings"></i>Settings</a>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                                            document.getElementById('logout-form').submit();" class="ti-layout-sidebar-left">{{ __('Logout') }}</a>
+                                            document.getElementById('logout-form').submit();"
+                                    class="ti-layout-sidebar-left">{{ __('Logout') }}</a>
                                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                     @csrf
                                 </form>
@@ -80,18 +82,17 @@
                         </a>
                     </li>
                     <li class="active">
-                                    <a href="{{url ('/admin/content')}}">
-                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                    <li class="active">
-                        <a href="{{url ('/admin/product')}}">
-                            <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
-                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
+                        <a href="{{url ('/admin/content')}}">
+                            <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                            <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
                             <span class="pcoded-mcaret"></span>
                         </a>
+                    </li>
+                    <a href="{{url ('/admin/product')}}">
+                        <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
+                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
+                        <span class="pcoded-mcaret"></span>
+                    </a>
                     </li>
                     <li class="active">
                         <a href="{{url ('/admin/typeproduct')}}">
@@ -137,10 +138,13 @@
                                                             <div class="row align-items-end">
                                                                 <div class="col-lg-8">
                                                                     <div class="page-header-title">
-                                                                        <i class="icofont icofont-file-code bg-c-blue"></i>
+                                                                        <i
+                                                                            class="icofont icofont-file-code bg-c-blue"></i>
                                                                         <div class="d-inline">
                                                                             <h4>Basic Form Inputs</h4>
-                                                                            <span>Lorem ipsum dolor sit <code>amet</code>, consectetur adipisicing elit</span>
+                                                                            <span>Lorem ipsum dolor sit
+                                                                                <code>amet</code>, consectetur
+                                                                                adipisicing elit</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -152,9 +156,11 @@
                                                                                     <i class="icofont icofont-home"></i>
                                                                                 </a>
                                                                             </li>
-                                                                            <li class="breadcrumb-item"><a href="#!">Form Components</a>
+                                                                            <li class="breadcrumb-item"><a
+                                                                                    href="#!">Form Components</a>
                                                                             </li>
-                                                                            <li class="breadcrumb-item"><a href="#!">Form Components</a>
+                                                                            <li class="breadcrumb-item"><a
+                                                                                    href="#!">Form Components</a>
                                                                             </li>
                                                                         </ul>
                                                                     </div>
@@ -171,26 +177,59 @@
                                                                     <div class="card">
                                                                         <div class="card-header">
                                                                             <h5>Basic Form Inputs</h5>
-                                                                            <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
-                                                                            <div class="card-header-right"><i class="icofont icofont-spinner-alt-5"></i></div>
+                                                                            <span>Add class of
+                                                                                <code>.form-control</code> with
+                                                                                <code>&lt;input&gt;</code> tag</span>
+                                                                            <div class="card-header-right"><i
+                                                                                    class="icofont icofont-spinner-alt-5"></i>
+                                                                            </div>
 
                                                                             <div class="card-header-right">
-                                                                                <i class="icofont icofont-spinner-alt-5"></i>
+                                                                                <i
+                                                                                    class="icofont icofont-spinner-alt-5"></i>
                                                                             </div>
 
                                                                         </div>
                                                                         <div class="card-block">
                                                                             <h4 class="sub-title">Basic Inputs</h4>
-                                                                            <form action="{{route('adminpage.adminuser.add')}}" method="POST">
+                                                                            <form
+                                                                                action="{{ route('adminpage.admincontent.update', $content->id) }}"
+                                                                                method="POST" enctype="multipart/form-data">
                                                                                 @csrf
                                                                                 <div class="form-group row">
-                                                                                    <label for="examplename">Project&Task</label>
-                                                                                    <input type="text" name="name" class="form-control" id="
-                                                                                    exampleInputName" placeholder="name">
+                                                                                    <label
+                                                                                        for="examplename">name</label>
+                                                                                    <input type="text" name="name"
+                                                                                        value="{{$content->name}}"
+                                                                                        class="form-control" id="
+                                                                                    exampleInputName"
+                                                                                        placeholder="name">
                                                                                 </div>
-                                                                                <button type="submit" class="btn btn-primary mr-2">Add</button>
-                                                                                <button type="rest" class="btn btn-primary mr-2">Reset</button>
-                                                                                <button class="btn btn-dark">Cancel</button>
+                                                                                <div class="form-group row">
+                                                                                    <label
+                                                                                        for="exampledetail">detail</label>
+                                                                                    <input type="text" name="detail"
+                                                                                        value="{{$content->detail}}"
+                                                                                        class="form-control" id="
+                                                                                    exampleInputdetail"
+                                                                                        placeholder="detail">
+                                                                                </div>
+                                                                                <div class="form-group row">
+                                                                                    <label
+                                                                                        class="col-sm-2 col-form-label">Upload
+                                                                                        File</label>
+                                                                                    <div class="col-sm-10">
+                                                                                        <input type="file"
+                                                                                        name = "image"
+                                                                                        class="form-control">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <button type="submit"
+                                                                                    class="btn btn-primary mr-2">Save</button>
+                                                                                <button type="rest"
+                                                                                    class="btn btn-primary mr-2">Reset</button>
+                                                                                <button
+                                                                                    class="btn btn-dark">Cancel</button>
                                                                             </form>
                                                                         </div>
                                                                     </div>
@@ -214,4 +253,4 @@
 </div>
 </div>
 
-@stop
+@endsection
