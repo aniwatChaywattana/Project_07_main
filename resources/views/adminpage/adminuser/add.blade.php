@@ -80,6 +80,13 @@
                         </a>
                     </li>
                     <li class="active">
+                                    <a href="{{url ('/admin/content')}}">
+                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                    <li class="active">
                         <a href="{{url ('/admin/product')}}">
                             <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                             <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -128,30 +135,10 @@
                                                         <!-- Page-header start -->
                                                         <div class="page-header card">
                                                             <div class="row align-items-end">
-                                                                <div class="col-lg-8">
-                                                                    <div class="page-header-title">
-                                                                        <i class="icofont icofont-file-code bg-c-blue"></i>
-                                                                        <div class="d-inline">
-                                                                            <h4>Basic Form Inputs</h4>
-                                                                            <span>Lorem ipsum dolor sit <code>amet</code>, consectetur adipisicing elit</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-lg-4">
-                                                                    <div class="page-header-breadcrumb">
                                                                         <ul class="breadcrumb-title">
-                                                                            <li class="breadcrumb-item">
-                                                                                <a href="index.html">
-                                                                                    <i class="icofont icofont-home"></i>
-                                                                                </a>
-                                                                            </li>
-                                                                            <li class="breadcrumb-item"><a href="#!">Form Components</a>
-                                                                            </li>
-                                                                            <li class="breadcrumb-item"><a href="#!">Form Components</a>
+                                                                            <li class="breadcrumb-item"><a href="#!">FormAddUser</a>
                                                                             </li>
                                                                         </ul>
-                                                                    </div>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                         <!-- Page-header end -->
@@ -162,18 +149,9 @@
                                                                 <div class="col-sm-12">
                                                                     <!-- Basic Form Inputs card start -->
                                                                     <div class="card">
-                                                                        <div class="card-header">
-                                                                            <h5>Basic Form Inputs</h5>
-                                                                            <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
-                                                                            <div class="card-header-right"><i class="icofont icofont-spinner-alt-5"></i></div>
 
-                                                                            <div class="card-header-right">
-                                                                                <i class="icofont icofont-spinner-alt-5"></i>
-                                                                            </div>
-
-                                                                        </div>
                                                                         <div class="card-block">
-                                                                            <h4 class="sub-title">Basic Inputs</h4>
+
                                                                             <form action="{{route('adminpage.adminuser.add')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">

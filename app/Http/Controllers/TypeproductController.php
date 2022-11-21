@@ -48,11 +48,23 @@ class TypeproductController extends Controller
         return redirect()->route('adminpage.admintypeproduct.typeproduct');
                        
     }
-    public function edit()
+    public function edit($id)
     {
-        $read = user::all();
-
-        // return view('home');
-        return view('adminpage.admintypeproduct.edit' , compact('read'));
+        $typeproduct = TypeProducts::find($id);
+        return view('adminpage.admintypeproduct.edit',compact('typeproduct'));
+    }
+    public function update(Request $request, $id)
+    {
+        $typeproduct = TypeProducts::find($id);
+        //dd($content);
+        $typeproduct->name = $request->name;
+        $typeproduct->save();
+        return redirect()->route('adminpage.admintypeproduct.typeproduct');
+    }
+    
+    public function destroy($id){ 
+        $typeproduct= TypeProducts::find($id);
+        $typeproduct->delete();
+        return redirect()->route('adminpage.admintypeproduct.typeproduct');
     }
 }

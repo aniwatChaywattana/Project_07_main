@@ -41,6 +41,13 @@
                                     </a>
                                 </li>
                                 <li class="active">
+                                    <a href="{{url ('/admin/contect')}}">
+                                        <span class="pcoded-micon"><i class="ti-home"></i><b>C</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Contect</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
                                     <a href="{{url ('/admin/product')}}">
                                         <span class="pcoded-micon"><i class="ti-home"></i><b>P</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>

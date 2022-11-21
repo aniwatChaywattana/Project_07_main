@@ -32,7 +32,7 @@
     border-radius: 15px;
 }
 </style>
-                  
+
 <div class="pcoded-main-container">
                 <div class="pcoded-wrapper">
                     <nav class="pcoded-navbar">
@@ -79,6 +79,13 @@
                                     </a>
                                 </li>
                                 <li class="active">
+                                    <a href="{{url ('/admin/content')}}">
+                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
                                     <a href="{{url ('/admin/product')}}">
                                         <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -118,9 +125,9 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>     
+                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>
                                                     </div>
-                                                    
+
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
                                                             <table class="table table-striped">
@@ -129,8 +136,9 @@
                                                                         <th>ID</th>
                                                                         <th>Product</th>
                                                                         <th>Type</th>
-                                                                        <th>Remaining amount</th>
-                                                                        <th>Modify</th>
+                                                                        <th>Price</th>
+                                                                        <th>Image</th>
+                                                                        <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
@@ -141,10 +149,9 @@
                                                                         <td>{{$row->name }}</td>
                                                                         <td>{{$row->detail }}</td>
                                                                         <td>{{$row->price }}</td>
-                                                                        <td><a href="{{url('/admin/product/edit')}}">
-                                                                        <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
-                                                                        Delete</button></td></form>
+                                                                        <td><img src="{{ asset('product/'.$row->image)}}" width="100px" height="80px" alt=""></td>
+                                                                        <td><a href="{{url('/admin/product/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
+                                                                        <td><a href="{{url('/admin/product/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
                                                                 </tbody>
@@ -164,6 +171,6 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
+
 @stop

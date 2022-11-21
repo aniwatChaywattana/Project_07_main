@@ -126,7 +126,7 @@
                                             <div class="col-md-12 col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/typeproduct/add')}}">Add</a></button>
+                                                        <button class="buttonadd"><a href="{{url ('/admin/content/add')}}">Add</a></button>
                                                     </div>
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
@@ -134,19 +134,23 @@
                                                                 <thead>
                                                                     <tr>
                                                                         <th>ID</th>
-                                                                        <th>Type</th>
+                                                                        <th>Name</th>
+                                                                        <th>Detail</th>
+                                                                        <th>Image</th>
                                                                         <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
 
                                                                 <tbody>
-                                                                @foreach($typeproduct as $row)
+                                                                @foreach($content as $row)
                                                                     <tr>
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
-                                                                        <td><a href="{{url('/admin/typeproduct/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
-                                                                        <td><a href="{{url('/admin/typeproduct/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
+                                                                        <td>{{$row->detail }}</td>
+                                                                        <td><img src="{{ asset('content/'.$row->image)}}" width="100px" height="80px" alt=""></td>
+                                                                        <td><a href="{{url('/admin/content/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
+                                                                        <td><a href="{{url('/admin/content/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
                                                                 </tbody>

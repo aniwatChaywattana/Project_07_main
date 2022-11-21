@@ -54,4 +54,9 @@ class UserController extends Controller
         // return view('home');
         return view('adminpage.adminuser.edit' , compact('read'));
     }
+    public function destroy($id){ 
+        $user= User::find($id);
+        $user->delete();
+        return redirect()->route('adminpage.adminuser.user');
+    }
 }

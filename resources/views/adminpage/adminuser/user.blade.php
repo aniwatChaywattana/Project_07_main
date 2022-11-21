@@ -80,6 +80,13 @@
                                     </a>
                                 </li>
                                 <li class="active">
+                                    <a href="{{url ('/admin/content')}}">
+                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
+                                        <span class="pcoded-mcaret"></span>
+                                    </a>
+                                </li>
+                                <li class="active">
                                     <a href="{{url ('/admin/product')}}">
                                         <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
@@ -120,21 +127,21 @@
                                             <div class="col-md-12  col-xl-12">
                                                 <div class="card project-task">
                                                     <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/user/add')}}">Add</a></button>     
+                                                        <button class="buttonadd"><a href="{{url ('/admin/user/add')}}">Add</a></button>
                                                     </div>
                                                     <div class="card-block p-b-10">
                                                         <div class="table-responsive">
                                                             <table class="table table-hover">
                                                                 <thead>
-                                                                    <tr>                                                                       
+                                                                    <tr>
                                                                         <th>ID</th>
                                                                         <th>Project & Task</th>
                                                                         <th>Time Spents</th>
-                                                                        <th>Modify</th>
+                                                                        <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
                                                                 </thead>
-                                                                
+
                                                                 <tbody>
                                                                 @foreach($user as $row)
                                                                     <tr>
@@ -142,9 +149,8 @@
                                                                         <td>{{$row->name }}</td>
                                                                         <td>{{$row->detail }}</td>
                                                                         <td><a href="{{url('/admin/user/edit')}}">
-                                                                        <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
-                                                                        Delete</button></td></form>
+                                                                        <button class="">Edit</button></a></td>
+                                                                        <td><a href="{{url('/admin/user/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>
                                                                 @endforeach
                                                                 </tbody>
@@ -164,10 +170,10 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
 
-        
+
+
 
 
 
