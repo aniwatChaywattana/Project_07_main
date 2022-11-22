@@ -131,10 +131,7 @@
                                                                 <div class="col-lg-8">
                                                                     <div class="page-header-title">
                                                                         <i class="icofont icofont-file-code bg-c-blue"></i>
-                                                                        <div class="d-inline">
-                                                                            <h4>Basic Form Inputs</h4>
-                                                                            <span>Lorem ipsum dolor sit <code>amet</code>, consectetur adipisicing elit</span>
-                                                                        </div>
+
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-4">

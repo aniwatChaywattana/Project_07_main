@@ -81,39 +81,32 @@
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/content')}}">
-                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
+                                        <span class="pcoded-micon"><i class="ti-comment-alt"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/product')}}">
-                                        <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
+                                        <span class="pcoded-micon"><i class="ti-archive"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/typeproduct')}}">
-                                        <span class="pcoded-micon"><i class="ti-package"></i><b>T</b></span>
+                                        <span class="pcoded-micon"><i class="ti-package"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Type Product</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/user')}}">
-                                        <span class="pcoded-micon"><i class="ti-user"></i><b>U</b></span>
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">User</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <!-- <li class="active">
-                                    <a href="{{url ('/admin/info')}}">
-                                        <span class="pcoded-micon"><i class="ti-info"></i><b>I</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Info</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li> -->
                             </ul>
                         </div>
                     </nav>
@@ -148,7 +141,7 @@
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
                                                                         <td>{{$row->detail }}</td>
-                                                                        <td><img src="{{ asset('content/'.$row->image)}}" width="100px" height="80px" alt=""></td>
+                                                                        <td><img src="{{ asset('content/'.$row->image)}}" width="100px" height="80px" style="border-style: solid; border-radius:25% " alt=""></td>
                                                                         <td><a href="{{url('/admin/content/edit/'.$row->id)}}"><button  class="edit" >Edit</button></a></td>
                                                                         <td><a href="{{url('/admin/content/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
                                                                     </tr>

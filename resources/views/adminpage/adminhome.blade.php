@@ -78,14 +78,14 @@
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                </li>    
+                                </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/content')}}">
                                         <span class="pcoded-micon"><i class="ti-comment-alt"></i><b>C</b></span>
                                         <span class="pcoded-mtext" data-i18n="nav.dash.main">Content</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
-                                </li>                                                           
+                                </li>
                                 <li class="active">
                                     <a href="{{url ('/admin/product')}}">
                                         <span class="pcoded-micon"><i class="ti-archive"></i><b>P</b></span>
@@ -155,16 +155,9 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <i class="icofont icofont-pie-chart bg-c-blue card1-icon"></i>
-                                                        <span class="text-c-blue f-w-600">Use space</span>
-                                                        <h4>49/50GB</h4>
-                                                        <div>
-                                                            <span class="f-left m-t-10 text-muted">
-                                                                <i
-                                                                    class="text-c-blue f-16 icofont icofont-warning m-r-10"></i>Get
-                                                                more space
-                                                            </span>
-                                                        </div>
+                                                        <i class="icofont  bg-c-pink card1-icon "><span class="pcoded-micon"><i class="ti-comment-alt"></i></span></i>
+                                                        <h2 class=" f-w-300">Content</h2>
+                                                        <h4>{{$content}}</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -173,16 +166,9 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <i class="icofont icofont-ui-home bg-c-pink card1-icon"></i>
-                                                        <span class="text-c-pink f-w-600">Revenue</span>
-                                                        <h4>$23,589</h4>
-                                                        <div>
-                                                            <span class="f-left m-t-10 text-muted">
-                                                                <i
-                                                                    class="text-c-pink f-16 icofont icofont-calendar m-r-10"></i>Last
-                                                                24 hours
-                                                            </span>
-                                                        </div>
+                                                        <i class="icofont  bg-c-green card1-icon"><span class="pcoded-micon"><i class="ti-archive"></i></span></i>
+                                                        <h2 class=" f-w-300">Product</h2>
+                                                        <h4>{{$product}}</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -191,17 +177,9 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <i
-                                                            class="icofont icofont-warning-alt bg-c-green card1-icon"></i>
-                                                        <span class="text-c-green f-w-600">Fixed issue</span>
-                                                        <h4>45</h4>
-                                                        <div>
-                                                            <span class="f-left m-t-10 text-muted">
-                                                                <i
-                                                                    class="text-c-green f-16 icofont icofont-tag m-r-10"></i>Tracked
-                                                                via microsoft
-                                                            </span>
-                                                        </div>
+                                                        <i class="bg-c-yellow card1-icon"><i class="ti-package"></i></span></i>
+                                                        <h2 class="f-w-300">TypeProduct</h2>
+                                                        <h4>{{$typeproduct}}</h4>
                                                     </div>
                                                 </div>
                                             </div>
@@ -210,132 +188,12 @@
                                             <div class="col-md-6 col-xl-3">
                                                 <div class="card widget-card-1">
                                                     <div class="card-block-small">
-                                                        <i
-                                                            class="icofont icofont-social-twitter bg-c-yellow card1-icon"></i>
-                                                        <span class="text-c-yellow f-w-600">Followers</span>
-                                                        <h4>+562</h4>
-                                                        <div>
-                                                            <span class="f-left m-t-10 text-muted">
-                                                                <i
-                                                                    class="text-c-yellow f-16 icofont icofont-refresh m-r-10"></i>Just
-                                                                update
-                                                            </span>
-                                                        </div>
+                                                        <i class=" card1-icon" style="background-color:rgb(160,82,45);" ><i class="ti-user"></i></span></i>
+                                                        <h2 class=" f-w-300">User</h2>
+                                                        <h4>{{$user}}</h4>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Data widget start -->
-                                            <div class="col-md-12 col-xl-12">
-                                                <div class="card project-task">
-                                                    <div class="card-header">
-                                                        <button class="buttonadd"><a href="{{url ('/admin/product/add')}}">Add</a></button>  
-                                                    </div>
-                                                    
-                                                    <div class="card-block p-b-10">
-                                                        <div class="table-responsive">
-                                                            <table class="table table-striped">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>ID</th>
-                                                                        <th>Product</th>
-                                                                        <th>Type</th>
-                                                                        <th>Remaining amount</th>
-                                                                        <th>Modify</th>
-                                                                        <th>Delete</th>
-                                                                    </tr>
-                                                                </thead>
-                                                                
-                                                                <tbody>
-                                                                @foreach($home as $row)
-                                                                    <tr>
-                                                                        <td>{{$row->id }}</td>
-                                                                        <td>{{$row->name }}</td>
-                                                                        <td>{{$row->detail }}</td>
-                                                                        <td>{{$row->price }}</td>
-                                                                        <td><a href="{{url('/admin/product/edit')}}">
-                                                                        <button class="">Modify</button></a></td> 
-                                                                        <form><td><button type="delete" class="delete">
-                                                                        Delete</button></td></form>
-                                                                    </tr>
-                                                                @endforeach
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- social start -->
-                                            <div class="col-md-12 col-xl-4">
-                                                <div class="card fb-card">
-                                                    <div class="card-header">
-                                                        <i class="icofont icofont-social-facebook"></i>
-                                                        <div class="d-inline-block">
-                                                            <h5>facebook</h5>
-                                                            <span>blog page timeline</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block text-center">
-                                                        <div class="row">
-                                                            <div class="col-6 b-r-default">
-                                                                <h2>23</h2>
-                                                                <p class="text-muted">Active</p>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <h2>23</h2>
-                                                                <p class="text-muted">Comment</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-xl-4">
-                                                <div class="card dribble-card">
-                                                    <div class="card-header">
-                                                        <i class="icofont icofont-social-dribbble"></i>
-                                                        <div class="d-inline-block">
-                                                            <h5>dribble</h5>
-                                                            <span>Product page analysis</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block text-center">
-                                                        <div class="row">
-                                                            <div class="col-6 b-r-default">
-                                                                <h2>23</h2>
-                                                                <p class="text-muted">Live</p>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <h2>23</h2>
-                                                                <p class="text-muted">Message</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-xl-4">
-                                                <div class="card twitter-card">
-                                                    <div class="card-header">
-                                                        <i class="icofont icofont-social-twitter"></i>
-                                                        <div class="d-inline-block">
-                                                            <h5>twitter</h5>
-                                                            <span>current new timeline</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-block text-center">
-                                                        <div class="row">
-                                                            <div class="col-6 b-r-default">
-                                                                <h2>25</h2>
-                                                                <p class="text-muted">new tweet</p>
-                                                            </div>
-                                                            <div class="col-6">
-                                                                <h2>450+</h2>
-                                                                <p class="text-muted">Follower</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- social End -->
-
                                         </div>
                                     </div>
                                 </div>
@@ -347,10 +205,10 @@
                         </div>
                     </div>
                 </div>
-            </div>                  
-                
+            </div>
 
-        
+
+
 
 
 

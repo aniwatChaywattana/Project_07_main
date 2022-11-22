@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Content;
+use App\Models\User;
 use App\Models\Home;
 use Illuminate\Http\Request;
 use App\Models\Product;
-
-
+use App\Models\TypeProducts;
 
 class HomeController extends Controller
 {
@@ -27,8 +28,12 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $content = Content::count();
+        $typeproduct = TypeProducts::count();
+        $product = Product::count();
+        $user = User::count();
         $home = Home::all();
-        return view('adminpage.adminhome' , compact('home'));
+        return view('adminpage.adminhome' , compact('home','user','typeproduct','content','product'));
     }
 
     public function formadd()
@@ -46,10 +51,10 @@ class HomeController extends Controller
             'price' => 'nullable',
             // 'picture'=>'null',
         ]);
-        
+
         Home::create($request->all());
 
         return redirect()->route('adminpage.adminhome');
-                       
+
     }
 }
