@@ -152,7 +152,7 @@
 
                                                                         <div class="card-block">
 
-                                                                            <form action="{{route('adminpage.admintypeproduct.add')}}" method="POST">
+                                                                            <form action="{{route('adminpage.admintypeproduct.create')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">Type</label>

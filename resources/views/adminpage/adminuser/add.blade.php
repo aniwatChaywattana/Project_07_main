@@ -152,7 +152,7 @@
 
                                                                         <div class="card-block">
 
-                                                                            <form action="{{route('adminpage.adminuser.add')}}" method="POST">
+                                                                            <form action="{{route('adminpage.adminuser.create')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">Project&Task</label>

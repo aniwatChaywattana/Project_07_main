@@ -83,7 +83,7 @@ Route::get('/admin/product/destroy/{id}', [ProductController::class, 'destroy'])
 Route::get('/admin/typeproduct',[TypeproductController::class,'index'])->name('adminpage.admintypeproduct.typeproduct');
 // C typeproduct
 Route::get('/admin/typeproduct/add',[TypeproductController::class,'formadd'])->name('adminpage.admintypeproduct.formadd');
-Route::post('/admin/typeproduct/add',[TypeproductController::class,'add'])->name('adminpage.admintypeproduct.add');
+Route::post('/admin/typeproduct/add',[TypeproductController::class,'add'])->name('adminpage.admintypeproduct.create');
 // U typeproduct
 
 Route::get('/admin/typeproduct/edit/{id}', [TypeproductController::class, 'edit'])->name('adminpage.admintypeproduct.edit');
@@ -94,7 +94,7 @@ Route::get('/admin/typeproduct/destroy/{id}', [TypeproductController::class, 'de
 Route::get('/admin/user',[UserController::class,'index'])->name('adminpage.adminuser.user');
 // C user
 Route::get('/admin/user/add',[UserController::class,'formadd'])->name('adminpage.adminuser.formadd');
-Route::post('/admin/user/add',[UserController::class,'add'])->name('adminpage.adminuser.add');
+Route::post('/admin/user/add',[UserController::class,'add'])->name('adminpage.adminuser.create');
 // U user
 
 Route::get('/admin/user/edit/{id}', [UserController::class, 'edit'])->name('adminpage.adminuser.edit');
