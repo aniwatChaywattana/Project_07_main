@@ -158,7 +158,7 @@
 
                                                                         </div>
                                                                         <div class="card-block">
-                                                                            <form action="{{route('adminpage.adminproduct.add')}}" method="post" enctype="multipart/form-data">
+                                                                            <form action="{{route('adminpage.adminproduct.create')}}" method="post" enctype="multipart/form-data">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">name</label>

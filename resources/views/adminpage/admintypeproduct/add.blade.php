@@ -152,20 +152,14 @@
 
                                                                         <div class="card-block">
 
-                                                                            <form action="{{route('adminpage.admintypeproduct.add')}}" method="POST">
+                                                                            <form action="{{route('adminpage.admintypeproduct.create')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">Type</label>
                                                                                     <input type="text" name="name" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
                                                                                 </div>
-                                                                                <div class="form-group row">
-                                                                                    <label class="col-sm-2 col-form-label">Upload File</label>
-                                                                                    <div class="col-sm-10">
-                                                                                        <input type="file" class="form-control">
-                                                                                    </div>
-                                                                                </div>
-                                                                                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                                                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                                                                 <button type="rest" class="btn btn-primary mr-2">Reset</button>
                                                                                 <button class="btn btn-dark">Cancel</button>
                                                                             </form>

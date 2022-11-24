@@ -152,14 +152,14 @@
 
                                                                         <div class="card-block">
 
-                                                                            <form action="{{route('adminpage.adminuser.add')}}" method="POST">
+                                                                            <form action="{{route('adminpage.adminuser.create')}}" method="POST">
                                                                                 @csrf
                                                                                 <div class="form-group row">
                                                                                     <label for="examplename">Project&Task</label>
                                                                                     <input type="text" name="name" class="form-control" id="
                                                                                     exampleInputName" placeholder="name">
                                                                                 </div>
-                                                                                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                                                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                                                                 <button type="rest" class="btn btn-primary mr-2">Reset</button>
                                                                                 <button class="btn btn-dark">Cancel</button>
                                                                             </form>
