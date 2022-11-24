@@ -13,9 +13,9 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>24 ซอย ประชาราษฏร์ 5 ตำบล ตลาดขวัญ อำเภอเมืองนนทบุรี นนทบุรี 11000</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0926020762</p>
+                    <p><i class="fa fa-envelope me-3"></i>nicelek2019@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Quick Links</h4>

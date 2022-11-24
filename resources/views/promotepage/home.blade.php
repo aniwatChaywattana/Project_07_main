@@ -85,7 +85,7 @@
                         <img class="img-fluid mb-4" src="{{asset('images/icon-1.png')}}" alt="">
                         <h4 class="mb-3">สถานที่นำเข้าผลไม้</h4>
                         <p class="mb-4">ทางร้านค้าของเราได้ทำการคัดสรรคสวนที่ปลูกผลไม้อย่างดีเพื่อให้ได้ผลไม้ที่มีคุณภาพที่สุด</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="https://www.talaadthai.com/">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -93,7 +93,7 @@
                         <img class="img-fluid mb-4" src="{{asset('images/icon-2.png')}} " alt="">
                         <h4 class="mb-3">วิธีที่เราดูแล และ ปลูกผลไม้ </h4>
                         <p class="mb-4">เราได้คัดสรรคและคัดแยกวิธีการปลูกเป็นอย่างดี เพื่อให้ลูกค้าของเราได้ของที่สดใหม่ ปลอดภัยไร้สารพิษ</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="https://www.kasetkaoklai.com/home/2019/04/7-%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%9C%E0%B8%A5%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%87/">Read More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -101,7 +101,7 @@
                         <img class="img-fluid mb-4" src="{{asset('images/icon-3.png')}} " alt="">
                         <h4 class="mb-3">วิธีการคัดแยกสินค้า</h4>
                         <p class="mb-4">เราได้คัดสรรคเป็นอย่างดีเพื่อให้ลูกค้าเราพึงพอใจมากที่สุด</p>
-                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="">Read More</a>
+                        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" href="https://www.foodnetworksolution.com/wiki/word/3240/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%B1%E0%B8%94%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94-sizing">Read More</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@
                                     <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
+                                    <a class="d-block h5 mb-2" href="">ส้ม</a>
                                     <span class="text-primary me-1">100 บาท/2กิโล</span>
                                     <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
                                 </div>
@@ -224,85 +224,85 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{{asset('images/product-1.jpg')}}" alt="">
+                                    <img class="img-fluid w-100" src="{{asset('images/big.jpg')}}" alt="">
                                     <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                    <a class="d-block h5 mb-2" href="">กล้วย</a>
+                                    <span class="text-primary me-1">$60/หวี</span>
+                                    <!-- <span class="text-body text-decoration-line-through"></span> -->
                                 </div>
-                                <div class="d-flex border-top">
+                                <!-- <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
                                         <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
                                         <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{{asset('images/product-1.jpg')}}" alt="">
+                                    <img class="img-fluid w-100 h-100" src="{{asset('images/watermelon.jpg')}}" alt="">
                                     <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
+                                    <a class="d-block h5 mb-2" href="">แตงโม </a>
                                     <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
                                 </div>
-                                <div class="d-flex border-top">
+                                <!-- <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
                                         <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
                                         <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{{asset('images/product-1.jpg')}}" alt="">
+                                    <img class="img-fluid w-100" src="{{asset('images/เงาะ.jpg')}}" alt="">
                                     <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
+                                    <a class="d-block h5 mb-2" href="">เงาะ 100/2กิโล</a>
                                     <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
                                 </div>
-                                <div class="d-flex border-top">
+                                <!-- <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
                                         <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
                                         <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                             <div class="product-item">
                                 <div class="position-relative bg-light overflow-hidden">
-                                    <img class="img-fluid w-100" src="{{asset('images/product-1.jpg')}}" alt="">
+                                    <img class="img-fluid w-100" src="{{asset('images/ชมพู่.jpg')}}" alt="">
                                     <div class="bg-secondary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">New</div>
                                 </div>
                                 <div class="text-center p-4">
-                                    <a class="d-block h5 mb-2" href="">Fresh Tomato</a>
-                                    <span class="text-primary me-1">$19.00</span>
-                                    <span class="text-body text-decoration-line-through">$29.00</span>
+                                    <a class="d-block h5 mb-2" href="">ชมพู</a>
+                                    <span class="text-primary me-1">40/กิโล</span>
+                                    <!-- <span class="text-body text-decoration-line-through">$29.00</span> -->
                                 </div>
-                                <div class="d-flex border-top">
+                                <!-- <div class="d-flex border-top">
                                     <small class="w-50 text-center border-end py-2">
                                         <a class="text-body" href=""><i class="fa fa-eye text-primary me-2"></i>View detail</a>
                                     </small>
                                     <small class="w-50 text-center py-2">
                                         <a class="text-body" href=""><i class="fa fa-shopping-bag text-primary me-2"></i>Add to cart</a>
                                     </small>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
