@@ -136,7 +136,6 @@
                                                                     <tr>
                                                                         <th>ID</th>
                                                                         <th>Project & Task</th>
-                                                                        <th>Time Spents</th>
                                                                         <th>Edit</th>
                                                                         <th>Delete</th>
                                                                     </tr>
@@ -147,7 +146,6 @@
                                                                     <tr>
                                                                         <td>{{$row->id }}</td>
                                                                         <td>{{$row->name }}</td>
-                                                                        <td>{{$row->detail }}</td>
                                                                         <td><a href="{{url('/admin/user/edit')}}">
                                                                         <button class="">Edit</button></a></td>
                                                                         <td><a href="{{url('/admin/user/destroy/'.$row->id)}}"><button  class="delete" >Delete</button></a></td>
