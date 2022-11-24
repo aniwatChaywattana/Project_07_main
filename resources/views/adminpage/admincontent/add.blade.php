@@ -168,7 +168,7 @@
                                                                                         <input type="file" name="image" class="form-control" />
                                                                                     </div>
                                                                                 </div>
-                                                                                <button type="submit" class="btn btn-primary mr-2">Add</button>
+                                                                                <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                                                                 <button type="rest" class="btn btn-primary mr-2">Reset</button>
                                                                                 <button class="btn btn-dark">Cancel</button>
                                                                             </form>
