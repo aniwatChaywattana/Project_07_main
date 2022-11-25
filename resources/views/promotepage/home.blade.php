@@ -59,8 +59,8 @@
                     </div>
                 </div>
                 <div  class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 style="color: white;" class="display-5 mb-4">ผลไม้คุณภาพที่คัดสรรเองกับมือ</h1>
-                    <p style="color: black;" class="mb-4">คุณน้อยผลไม้เป็นร้านขายผลไม้ ที่สร้างโดยคุณน้อยผลไม้ โดยสินค้าภายในร้านนั้นจะถูกคัดสรรมาเป็นอย่าดีจากสวนที่คุณน้อยนั้นได้นำมาขายและจะถูกคุณน้อยคัดสรรอีกทีเมื่อถึงหน้าร้านเพื่อให้ได้คุณภาพ ตามที่ลูกค้านั้นต้องการ</p>
+                    <h1   style="font-family:'Sriracha', cursive ; color: white;" class="display-5 mb-4">ผลไม้คุณภาพที่คัดสรรเองกับมือ</h1>
+                    <p style=" color: black;" class="h-1 mb-4">คุณน้อยผลไม้เป็นร้านขายผลไม้ ที่สร้างโดยคุณน้อยผลไม้ โดยสินค้าภายในร้านนั้นจะถูกคัดสรรมาเป็นอย่าดีจากสวนที่คุณน้อยนั้นได้นำมาขายและจะถูกคุณน้อยคัดสรรอีกทีเมื่อถึงหน้าร้านเพื่อให้ได้คุณภาพ ตามที่ลูกค้านั้นต้องการ</p>
                     <p style="color: black;"><i class="fa fa-check text-primary me-3"></i>สดใหม่</p>
                     <p style="color: black;"><i class="fa fa-check text-primary me-3"></i>อร่อยถูกใจ</p>
                     <p style="color: black;"><i class="fa fa-check text-primary me-3"></i>ได้คุณภาพ</p>
@@ -77,7 +77,7 @@
         <div class="container">
             <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <h1 class="display-5 mb-3">เกี่ยวกับสินค้าของเรา</h1>
-                <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                <p style="font-family: ' Rubik Glitch'  , cursive;" >Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">

@@ -32,7 +32,7 @@ use App\Http\Controllers\UserController;
 Route::view('/','promotepage.home')->name('home');
 Route::view('/about', 'promotepage.about')->name('about');
 Route::view('/contact', 'promotepage.contact')->name('contact');
-Route::view('/product', 'promotepage.product')->name('product');
+Route::view('/products', 'promotepage.product')->name('product');
 Route::view('/product02', 'promotepage.product02')->name('product02');
 Route::view('/product03', 'promotepage.product03')->name('product03');
 Route::view('/product04', 'promotepage.product04')->name('product04');

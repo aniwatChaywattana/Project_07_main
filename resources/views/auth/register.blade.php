@@ -30,7 +30,7 @@
                     <div class="wrap-input100 validate-input" data-validate="assress is required">
 						<input class="input100" type="text" name="address"  id="address" >
 						<span class="focus-input100"></span>
-						<span class="label-input100">Adress</span>
+						<span class="label-input100">Address</span>
 					</div>
 
                     <div class="wrap-input100 validate-input" data-validate="email is required">
