@@ -99,6 +99,8 @@
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
+    /* font-family: 'Chakra Petch', sans-serif; */
+/* font-family: 'Sriracha', cursive; */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
@@ -205,11 +207,13 @@
 
 /*** Section Header ***/
 .section-header {
+    
     position: relative;
     padding-top: 25px;
 }
 
 .section-header::before {
+    
     position: absolute;
     content: "";
     width: 60px;
@@ -221,6 +225,7 @@
 }
 
 .section-header::after {
+    
     position: absolute;
     content: "";
     width: 90px;
@@ -233,6 +238,7 @@
 
 .section-header.text-start::before,
 .section-header.text-start::after {
+    
     left: 0;
     transform: translateX(0);
 }
@@ -360,6 +366,8 @@
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
+    /* font-family: 'Chakra Petch', sans-serif; */
+    /* font-family: 'Sriracha', cursive ; */
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #999999;

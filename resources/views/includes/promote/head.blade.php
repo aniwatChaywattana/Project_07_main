@@ -20,11 +20,18 @@
 <!-- Template Stylesheet -->
 <link href=" {{asset('template/promote/css/style.css')}} " rel="stylesheet">
 
-<!--ฟ้อน-->
+<!--Google Front-->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"> -->
+
+<!-- ตัวใหม่ -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-<!--สิ้นสุดฟ้อน-->
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Rubik+Glitch&family=Sriracha&display=swap" rel="stylesheet">
+<!-- ตัวใหม่ -->
+
+<!--End Google Front-->
 
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
